@@ -7,8 +7,6 @@ Course materials for a data visualization course taught at the University of Neb
 
 This course is first and foremost an experiment in student learning at a journalism school. It is not an online course. These materials are here to augment the classroom experience. The materials here are being posted publicly and are open for use, reuse or contributions if you so desire. 
 
-This is the 
-
 ##Course goals
 
 * Introduce students to data visualization tools and techniques
