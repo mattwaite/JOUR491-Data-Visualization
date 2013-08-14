@@ -4,14 +4,14 @@ This is __very tentative__ and __will change__.
 | Date | Objective | Assignment|
 | -----|-----------|-----------
 | Aug. 27, 2013 | Introductions, syllabus, requirements, needs | Sign up for a GitHub account. Email me your account name. |
-| Aug. 29, 2013 | What is data visualization? |  | 
-| Sept. 3, 2013 | 
-| Sept. 5, 2013 | 
-| Sept. 10, 2013 | 
-| Sept. 12, 2013 | 
+| Aug. 29, 2013 | What is data visualization? | Read Tufte Part I Chapter 1, Graphical Excellence (pg 13-51) Quiz next class | 
+| Sept. 3, 2013 | Graphical excellence explained | Read Cairo, Part I Chapter 2: Forms and Functions
+| Sept. 5, 2013 | Hands on: Your first visualization using Excel | Read Tufte Part III Chapter 4, 5, 6
+| Sept. 10, 2013 | Improving visualizations | Visualize some data, apply what you've learned, write about what you did to improve your visualization.
+| Sept. 12, 2013 | Hands on: Chartbuilder |
 | Sept. 17, 2013 | 
-| Sept. 19, 2013 | 
-| Sept. 24, 2013 | 
+| Sept. 19, 2013 | | Read Tufte part II, Graphical Integrity (pg 52-77)|
+| Sept. 24, 2013 | Lying with charts
 | Sept. 26, 2013 | 
 | Oct. 1, 2013 | 
 | Oct. 3, 2013 | 
