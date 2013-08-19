@@ -13,7 +13,7 @@
 
 * Tell a story with data using visual and narrative techniques discussed in the class.
 * This story must be on the web.
-* This story must used D3.js
+* This story must use D3.js
 * This story must have multiple data sources.
 
 You will be graded on:
