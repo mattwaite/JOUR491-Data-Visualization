@@ -5,6 +5,7 @@
 * The Functional Art: An introduction to information graphics and visualization by Alberto Cairo
 ###Other requirements:
 * A GitHub account (free)
+* Git install on your computer. GUI versions: [Mac user](http://mac.github.com/) | [Windows user](http://windows.github.com/).
 * A Google account (free)
 * A code editor (I can point you to free ones)
 * A sense of humor (Can't help you here)###Class opportunities:The opportunities in this class are to experiment with storytelling in a way you have never done before. Creativity and ambition will be rewarded. Copy and pasting will not.
