@@ -3,7 +3,7 @@ This is __very tentative__ and __will change__.
 
 | Date | Objective | Assignment|
 | -----|-----------|-----------
-| Aug. 27, 2013 | Introductions, syllabus, requirements, needs, skills survey | Sign up for a GitHub account. Email me your account name. |
+| Aug. 27, 2013 | Introductions, syllabus, requirements, needs, skills survey | Sign up for a GitHub account. Install Git (check the syllabus for links). Fork the course repository. Clone it to your computer. |
 | Aug. 29, 2013 | What is data visualization? | Read Tufte Part I Chapter 1, Graphical Excellence (pg 13-51) Quiz next class | 
 | Sept. 3, 2013 | Graphical excellence explained | Read Cairo, Part I Chapter 2: Forms and Functions
 | Sept. 5, 2013 | Hands on: Your first visualization using Excel | Read Tufte Part III Chapter 4, 5, 6
