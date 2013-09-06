@@ -7,7 +7,7 @@ This is __very tentative__ and __will change__.
 | Aug. 29, 2013 | What is data visualization? | Read Tufte Part I Chapter 1, Graphical Excellence (pg 13-51) | 
 | Sept. 3, 2013 | Graphical excellence explained | Read Cairo, Part I Chapter 2: Forms and Functions
 | Sept. 5, 2013 | Hands on: Your first visualization using Excel | Read Tufte Part III Chapter 4, 5, 6
-| Sept. 10, 2013 | Improving visualizations | Visualize some data with Excel, apply what you've learned, write about what you did to improve your visualization.
+| Sept. 10, 2013 | Improving visualizations, hands on | Visualize some data with Excel, apply what you've learned, write about what you did to improve your visualization.
 | Sept. 12, 2013 | Discussion: Does this chart work? Why? Why not? | Install Chartbuilder on your machine
 | Sept. 17, 2013 | Hands on: Chartbuilder | Based on your charts, and what you've read, what could you improve? Write it down.
 | Sept. 19, 2013 | Hands on: Hacking Chartbuilder | What you wrote down? Time to implement it in CSS and Chartbuilder |
