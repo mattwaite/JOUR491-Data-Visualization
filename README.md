@@ -15,7 +15,7 @@ This course is first and foremost an experiment in student learning at a journal
 * Get hands on with tools for visualization, from Excel to HTML/CSS to D3.js
 * Learn to apply best practices for good data visualization to each of the data visualization tools
 * Get experience using GitHub for version control
-* Get experience with other development environments when working with code
+* Get experience with other development environments when working with code.
 
 
 
