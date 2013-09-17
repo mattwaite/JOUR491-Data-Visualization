@@ -4,18 +4,18 @@ This is __very tentative__ and __will change__.
 | Date | Objective | Assignment|
 | -----|-----------|-----------
 | Aug. 27, 2013 | Introductions, syllabus, requirements, needs, skills survey | Sign up for a GitHub account. Install Git (check the syllabus for links). Fork the course repository. Clone it to your computer. |
-| Aug. 29, 2013 | What is data visualization? | Read Tufte Part I Chapter 1, Graphical Excellence (pg 13-51) Quiz next class | 
+| Aug. 29, 2013 | What is data visualization? | Read Tufte Part I Chapter 1, Graphical Excellence (pg 13-51) | 
 | Sept. 3, 2013 | Graphical excellence explained | Read Cairo, Part I Chapter 2: Forms and Functions
 | Sept. 5, 2013 | Hands on: Your first visualization using Excel | Read Tufte Part III Chapter 4, 5, 6
 | Sept. 10, 2013 | Improving visualizations | Visualize some data with Excel, apply what you've learned, write about what you did to improve your visualization.
-| Sept. 12, 2013 | Discussion: Does this chart work? Why? Why not? | Install Chartbuilder on your machine
-| Sept. 17, 2013 | Hands on: Chartbuilder | Based on your charts, and what you've read, what could you improve? Write it down.
+| Sept. 12, 2013 | Improving visualizations | Apply what you've learned to your data visualization, write about what you did to improve your visualization, submit as a pull request. |
+| Sept. 17, 2013 | Basic data literacy part I | Submit your visualized data via pull request |
 | Sept. 19, 2013 | Hands on: Hacking Chartbuilder | What you wrote down? Time to implement it in CSS and Chartbuilder |
 | Sept. 24, 2013 | How your brain works | Read Cairo Part II Chapter 6 and 7 |
 | Sept. 26, 2013 | Discussion: Why is cognition important? | TBA |
 | Oct. 1, 2013 | Hangout class: The worst visualizations ever | Read Tufte Part I Chapter 2 and 3 |
-| Oct. 3, 2013 | Hands on: Making bad decisions with visualizations | TBA |
-| Oct. 8, 2013 | Basic data literacy part I | TBA |
+| Oct. 3, 2013 | Hands on: Making bad decisions with visualizations | [Install Chartbuilder on your machine](http://www.poynter.org/how-tos/220572/how-to-use-chartbuilder-to-make-simple-graphics-fast/) |
+| Oct. 8, 2013 | Hands on: Chartbuilder | TBA |
 | Oct. 10, 2013 | Hangout class: Basic data literacy part II | TBA |
 | Oct. 15, 2013 | Hands on with basic data literacy | TBA |
 | Oct. 17, 2013 | Hangout class: Guest speaker TBA |TBA |
