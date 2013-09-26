@@ -1,0 +1,28 @@
+Gary Kebbel
+JOUR 491
+Sept.24, 2013
+
+
+Comparing Student Loan Default Rates and State Unemployment Rates
+
+I wondered if there was a relationship between student loan default rates by state, and that state’s unemployment rate. My assumption was that a majority of students attend school in their home state. An assumption I wanted to test was would state unemployment rate be correlated to state student loan default rate, and ultimately, would it be a predictor of a state’s student loan default rate? Another assumption was that at the height of the recession in 2008 and 2009, state unemployment rate would be a better predictor of student loan default rate that at other times.
+
+To begin to study the data to see if any of these assumptions might be true, I sorted the default rate data for 2008, 2009, 2010 by state, and sorted again on private, public and proprietary institutions within each state. I subtotaled, then averaged, the private, public and proprietary rates for each state, to get an average state default rate. Next, I sorted those average rates from high to low.
+
+Additionally, I used Bureau of Labor Statistics unemployment rate data by state for 2008, 2009 and 2010, sorting for the states with the highest rates. I then paired the state’s unemployment rate (with #1 having the highest unemployment) with the states with the top four default rates. 
+
+For 2008, the states with highest total student loan default rates were
+
+State		Unemployment rank
+Kentucky		  8	
+Arkansas		22
+Oklahoma		46
+Georgia		15
+
+My assumptions did not prove true. This finding was the same for 2009 and 2010. Oklahoma, a state with the 46th worse unemployment rate (5th best unemployment rate) was always among the states with the highest student loan default rates. Arkansas, always in the middle of the unemployment rate of the 50 states plus District of Columbia, also always was among the top four states with the highest default rates.
+
+Factors other than unemployment explain a state’s student loan default rate.
+
+Oklahoma is a case to be studied because it has such a low unemployment rate and such a high student loan default rate.
+
+However, I could not think of a way to illustrate this that would be clearer than a simple text chart.
