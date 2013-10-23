@@ -1,0 +1,4 @@
+There are a few things wrong with Scalora-Chartbuilder-1 and Scalora-Chartbuilder-2:
+
+-The state names are not legible. 
+-The last column overlaps the y-axis, making it hard to read. 
