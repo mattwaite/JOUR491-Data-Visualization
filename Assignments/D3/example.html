@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>D3 Test</title>
+        <script type="text/javascript" src="d3/d3.v3.js"></script>
+        <style>
+            div.bar {
+                display: inline-block;
+                width: 25px;
+                height: 75px;
+                background-color: red;
+                margin-right: 10px;
+                }
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript">
+        var dataset = [5,50,10,40,15,30,20,20,25];
+            d3.select("body").append("h2").text("wurd to yo mutha");
+            d3.select("body").selectAll("div")
+                .data(dataset)
+                .enter()
+                .append("div")
+                .attr("class", "bar")
+                .style("height", function(d) { 
+                    var barHeight = d * 5;
+                    return barHeight + "px";
+                });
+        </script>
+        <p>That's my chart, suck it Trebek!</p>
+    </body>
+</html>     
