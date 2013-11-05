@@ -5,6 +5,10 @@
         <title>D3 Test</title>
         <script type="text/javascript" src="d3/d3.v3.js"></script>
         <style>
+            .chart rect {
+                stroke: white;
+                fill: steelblue;
+            }
             div.bar {
                 display: inline-block;
                 width: 25px;
@@ -17,6 +21,35 @@
     <body>
         <script type="text/javascript">
         var dataset = [5,50,10,40,15,30,20,20,25];
+        var chart = d3.select("body").append("svg")
+            .attr("class", "chart")  
+            .attr("width", 420)
+            .attr("height", 20 * dataset.length);
+
+            var x = d3.scale.linear()
+                            .domain([0, d3.max(dataset)])
+                            .range([0, 420]);
+            var y =  d3.scale.ordinal()
+                            .domain(dataset)
+                            .rangeBands([0, 180])
+
+            chart.selectAll("rect").data(dataset)
+                                .enter()
+                                .append("rect")
+                                .attr("y", y)
+                                .attr("width", x)
+                                .attr("height", 20);
+
+            chart.selectAll("text")
+                .data(dataset)
+                .enter()
+                .append("text")
+                .attr("x", x)
+                .attr("y", function (d){ return y(d) + y.rangeBand()/2;})
+                .attr("dx", -3)
+                .attr("dy", ".35em")
+                .attr("text-anchor", "end")
+                .text(String);    
             d3.select("body").append("h2").text("wurd to yo mutha");
             d3.select("body").selectAll("div")
                 .data(dataset)
