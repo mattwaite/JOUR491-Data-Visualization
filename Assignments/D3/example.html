@@ -4,35 +4,64 @@
         <meta charset="utf-8">
         <title>D3 Test</title>
         <script type="text/javascript" src="d3/d3.v3.js"></script>
-		<style>
-		div.bar {
-		    display: inline-block;
-		    width: 20px;
-		    height: 75px;   /* We'll override this later */
-		    background-color: teal;
-			margin-right: 2px;
-		}
-		
-		</style>
-		
+        <style>
+            .chart rect {
+                stroke: white;
+                fill: steelblue;
+            }
+            div.bar {
+                display: inline-block;
+                width: 25px;
+                height: 75px;
+                background-color: red;
+                margin-right: 10px;
+                }
+        </style>
     </head>
     <body>
         <script type="text/javascript">
+        var dataset = [5,50,10,40,15,30,20,20,25];
+        var chart = d3.select("body").append("svg")
+            .attr("class", "chart")  
+            .attr("width", 420)
+            .attr("height", 20 * dataset.length);
 
-		var dataset = [ 25, 7, 5, 26, 11, 8, 25, 14, 23, 19,
-		                14, 11, 22, 29, 11, 13, 12, 17, 18, 10,
-		                24, 18, 25, 9, 3 ];
+            var x = d3.scale.linear()
+                            .domain([0, d3.max(dataset)])
+                            .range([0, 420]);
+            var y =  d3.scale.ordinal()
+                            .domain(dataset)
+                            .rangeBands([0, 180])
 
-		d3.select("body").selectAll("div")
-		    .data(dataset)
-		    .enter()
-		    .append("div")
-		    .attr("class", "bar")
-			.style("height", function(d) {
-			    var barHeight = d * 5;  //Scale up by factor of 5
-			    return barHeight + "px";
-			});
+            chart.selectAll("rect").data(dataset)
+                                .enter()
+                                .append("rect")
+                                .attr("y", y)
+                                .attr("width", x)
+                                .attr("height", 20);
+
+            chart.selectAll("text")
+                .data(dataset)
+                .enter()
+                .append("text")
+                .attr("x", x)
+                .attr("y", function (d){ return y(d) + y.rangeBand()/2;})
+                .attr("dx", -3)
+                .attr("dy", ".35em")
+                .attr("text-anchor", "end")
+                .text(String);    
+            d3.select("body").append("h2").text("wurd to yo mutha");
+            d3.select("body").selectAll("div")
+                .data(dataset)
+                .enter()
+                .append("div")
+                .attr("class", "bar")
+                .style("height", function(d) { 
+                    var barHeight = d * 5;
+                    return barHeight + "px";
+                });
         </script>
-		<p>This is my caption!</p>
+        <p>That's my chart, suck it Trebek!</p>
+
     </body>
 </html>     
