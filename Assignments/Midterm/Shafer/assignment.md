@@ -1,7 +1,6 @@
-#Headline#
+#Who Were the Best Value Draft Picks in the NBA?#
 
-**By: Your Name Here**
+**By: Travis Shafer**
 
-Chatter goes here. Include links where useful. Write like this is going into a news publication. Because it might. You never know.
-
-**Source: Your source(s) here**
+Successful basketball players need to 
+**Source: http://www.basketball-reference.com/leaders/pts_per_g_career.html **
