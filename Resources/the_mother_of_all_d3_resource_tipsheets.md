@@ -10,6 +10,8 @@
 
 [D3 book](http://chimera.labs.oreilly.com/books/1230000000345/index.html)
 
+[D3 for mere mortals](http://www.recursion.org/d3-for-mere-mortals/)
+
 ###Examples of D3 graphics
 
 [D3 gallery wiki](https://github.com/mbostock/d3/wiki/Gallery)
