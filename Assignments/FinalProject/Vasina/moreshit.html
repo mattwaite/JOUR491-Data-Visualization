@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+
+    <title>Jumbotron Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="jumbotron.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <style>
+body {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+path.invisible {
+  fill: none;
+  stroke: rgba(0,0,0,0);
+  stroke-width: 8px;
+}
+
+text.label {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+</style>
+
+<script src="http://mbostock.github.com/d3/d3.v2.js"></script>
+
+<script src="http://documentcloud.github.com/underscore/underscore.js"></script>
+
+    
+    
+    
+    
+    
+    
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div class="navbar-collapse collapse">
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Hello, world!</h1>
+        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+        
+        
+       <div class="row">
+        
+        <div class="col-md-6" style="float: left">
+       
+        <div id="chart1">
+        <script type="text/javascript">
+var margin = {top: 20, right: 220, bottom: 30, left: 50},
+    width = 1000 - margin.left - margin.right,
+    height = 500 - margin.top - margin.bottom;
+
+
+var format = d3.time.format("%b %Y");
+
+var start = format.parse("Jan 2010");
+var end = format.parse("Nov 2013");
+var range = d3.time.months(start,end);
+
+var x = d3.time.scale()
+    .range([0,width])
+    .domain([start,end]);
+
+var y = d3.scale.linear()
+    .range([height, 0]);
+
+var color = function(i) {
+  return d3.hcl(48*i,95,45).toString();
+};
+
+var xAxis = d3.svg.axis()
+    .scale(x)
+    .orient("bottom");
+
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left");
+
+var line = d3.svg.line()
+    .interpolate("basis")
+    .defined(function(d) { return d != null; })
+    .x(function(d,i) { return x(range[i]); })
+    .y(function(d) { return y(d); });
+
+var svg = d3.select("#chart1").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+d3.csv("Zombiedata2.csv", function(raw) {
+  var data = [];
+  var goods = _(raw).pluck("Name");
+
+  _(raw).each(function(series) {
+    var value = {};
+    data.push({
+      id: series["Series ID"],
+      name: series["Name"],
+      values: _(range).map(function(month) {
+                return parseFloat(series[format(month)]) || null;
+              })
+    });
+  });
+
+  var values = _(data).chain().pluck('values').flatten().value();
+
+  y.domain([
+    0,
+    d3.max(values)
+  ]);
+
+
+  svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis);
+
+  svg.append("g")
+      .attr("class", "y axis")
+      .call(yAxis)
+    .append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 6)
+      .attr("dy", ".71em")
+      .style("text-anchor", "end")
+      .style("font-weight", "bold")
+      .text("Interest");
+
+  var series = svg.selectAll(".series")
+      .data(data)
+    .enter().append("g")
+      .attr("class", "series");
+
+  series.append("path")
+      .attr("class", "line")
+      .attr("d", function(d) { return line(d.values); })
+      .style("stroke", function(d,i) { return color(i); });
+
+  series.append("path")
+      .attr("class", "invisible hover")
+      .attr("d", function(d) { return line(d.values); });
+
+  var labels = data.map(function(d) { return {name: d.name, y: y(d.values[d.values.length - 1])}});
+
+  series.append("text")
+      .attr("class", "label hover")
+      .data(labels)
+      .attr("transform", function(d) { return "translate(" + x(end) + "," + d.y + ")"; })
+      .attr("x", 3)
+      .attr("dy", ".35em")
+      .style("fill", function(d,i) { return color(i); })
+      .text(function(d) { return d.name; });
+
+  // constraint relaxation on labels
+  var alpha = 0.5;
+  var spacing = 12;
+  function relax() {
+    var again = false;
+    labels.forEach(function(a,i) {
+      labels.slice(i+1).forEach(function(b) {
+        var dy = a.y - b.y;
+        if (Math.abs(dy) < spacing) {
+          again = true;
+          var sign = dy > 0 ? 1 : -1;
+          a.y += sign*alpha;
+          b.y -= sign*alpha;
+        }
+      });
+    });
+    d3.selectAll(".label")
+      .attr("transform", function(d) { return "translate(" + x(end) + "," + d.y + ")"; });
+    if (again) setTimeout(relax,20);
+  };
+
+  relax();
+
+  series.selectAll(".hover")
+      .on("mouseover", function(d,i) {
+        d3.selectAll(".line")
+          .style("opacity", 0.12)
+          .filter(function(p) { return p.name == d.name; })
+          .style("opacity", 1)
+          .style("stroke-width", 2.5);
+        d3.selectAll(".series text")
+          .style("opacity", 0)
+          .filter(function(p) { return p.name == d.name; })
+          .style("opacity", 1);
+      })
+      .on("mouseout", function(d,i) {
+        d3.selectAll(".line")
+          .style("opacity", 1)
+          .style("stroke-width", null);
+        d3.selectAll(".series text")
+          .style("opacity", 1);
+      });
+});
+</script>
+      </div>
+        </div>
+        
+        
+        <div class="col-md-6">
+         
+        <div id="chart2" style="float:left">
+        <script type="text/javascript">
+var margin = {top: 20, right: 220, bottom: 30, left: 50},
+    width = 1000 - margin.left - margin.right,
+    height = 500 - margin.top - margin.bottom;
+
+
+var format = d3.time.format("%b %Y");
+
+var start = format.parse("Jan 2010");
+var end = format.parse("Nov 2013");
+var range = d3.time.months(start,end);
+
+var x = d3.time.scale()
+    .range([0,width])
+    .domain([start,end]);
+
+var y = d3.scale.linear()
+    .range([height, 0]);
+
+var color = function(i) {
+  return d3.hcl(48*i,95,45).toString();
+};
+
+var xAxis = d3.svg.axis()
+    .scale(x)
+    .orient("bottom");
+
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left");
+
+var line = d3.svg.line()
+    .interpolate("basis")
+    .defined(function(d) { return d != null; })
+    .x(function(d,i) { return x(range[i]); })
+    .y(function(d) { return y(d); });
+
+var svg = d3.select("#chart2").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+d3.csv("creaturetypes.csv", function(raw) {
+  var data = [];
+  var goods = _(raw).pluck("Name");
+
+  _(raw).each(function(series) {
+    var value = {};
+    data.push({
+      id: series["Series ID"],
+      name: series["Name"],
+      values: _(range).map(function(month) {
+                return parseFloat(series[format(month)]) || null;
+              })
+    });
+  });
+
+  var values = _(data).chain().pluck('values').flatten().value();
+
+  y.domain([
+    0,
+    d3.max(values)
+  ]);
+
+
+  svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis);
+
+  svg.append("g")
+      .attr("class", "y axis")
+      .call(yAxis)
+    .append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 6)
+      .attr("dy", ".71em")
+      .style("text-anchor", "end")
+      .style("font-weight", "bold")
+      .text("Interest");
+
+  var series = svg.selectAll(".series")
+      .data(data)
+    .enter().append("g")
+      .attr("class", "series");
+
+  series.append("path")
+      .attr("class", "line")
+      .attr("d", function(d) { return line(d.values); })
+      .style("stroke", function(d,i) { return color(i); });
+
+  series.append("path")
+      .attr("class", "invisible hover")
+      .attr("d", function(d) { return line(d.values); });
+
+  var labels = data.map(function(d) { return {name: d.name, y: y(d.values[d.values.length - 1])}});
+
+  series.append("text")
+      .attr("class", "label hover")
+      .data(labels)
+      .attr("transform", function(d) { return "translate(" + x(end) + "," + d.y + ")"; })
+      .attr("x", 3)
+      .attr("dy", ".35em")
+      .style("fill", function(d,i) { return color(i); })
+      .text(function(d) { return d.name; });
+
+  // constraint relaxation on labels
+  var alpha = 0.5;
+  var spacing = 12;
+  function relax() {
+    var again = false;
+    labels.forEach(function(a,i) {
+      labels.slice(i+1).forEach(function(b) {
+        var dy = a.y - b.y;
+        if (Math.abs(dy) < spacing) {
+          again = true;
+          var sign = dy > 0 ? 1 : -1;
+          a.y += sign*alpha;
+          b.y -= sign*alpha;
+        }
+      });
+    });
+    d3.selectAll(".label")
+      .attr("transform", function(d) { return "translate(" + x(end) + "," + d.y + ")"; });
+    if (again) setTimeout(relax,20);
+  };
+
+  relax();
+
+  series.selectAll(".hover")
+      .on("mouseover", function(d,i) {
+        d3.selectAll(".line")
+          .style("opacity", 0.12)
+          .filter(function(p) { return p.name == d.name; })
+          .style("opacity", 1)
+          .style("stroke-width", 2.5);
+        d3.selectAll(".series text")
+          .style("opacity", 0)
+          .filter(function(p) { return p.name == d.name; })
+          .style("opacity", 1);
+      })
+      .on("mouseout", function(d,i) {
+        d3.selectAll(".line")
+          .style("opacity", 1)
+          .style("stroke-width", null);
+        d3.selectAll(".series text")
+          .style("opacity", 1);
+      });
+});
+</script>
+        </div>
+        
+       </div>
+        
+        </div>
+       
+          </div>
+      
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; Company 2013</p>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
