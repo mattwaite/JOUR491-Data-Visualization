@@ -1,27 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
-
-    <title>Jumbotron Template for Bootstrap</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="dist/css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="jumbotron.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-    <style>
+<title>Constraint Relaxation - Prices</title>
+<meta charset="utf-8">
+<style>
 body {
   font: 10px sans-serif;
 }
@@ -58,89 +38,17 @@ text.label {
   font-weight: bold;
 }
 
-#area1 {
-  float: left;
-}
-
-#area2 {
-  float: right;
-}
-
 </style>
 
 <script src="http://mbostock.github.com/d3/d3.v2.js"></script>
 
 <script src="http://documentcloud.github.com/underscore/underscore.js"></script>
 
-  </head>
-  
-
-  <body>
-
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Zombies, Zombies, Zombies.</a>
-        </div>
-        <div class="navbar-collapse collapse">
-        </div><!--/.navbar-collapse -->
-      </div>
-    </div>
-
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <h1>The uprise has started...</h1>
-        <p><small>With entertainment and pop culture being a huge portion of day-to-day life in America, it is not a surprise that a the popularity of television and literature would influence and increase interest the hypothetical apocalyptic phenomenon known as Zombies.<br>
-        While zombies have only recently come to be a widely discussed subject amongst people, the idea of Zombies has existed for generations.
-        Haitian Creole has long believed in the idea of Zombies as a part of their mystic culture.
-        They believe Zombies (or zonbi as they call it) are corpses raised from the dead by witchcraft.
-        Similarly, across the ocean in West Africa they believe Zombies (known as Zombi) are a part of the Vodou culture and also believed to be corpses raised from the dead by means on magic.
-        <br>
-         Zombies entered into pop culture in 1932 with the first feature length zombie film called <i>White Zombie.</i>
-         The movies plot follows suit the the Haitian and Afrian folklore of Zombies being controlled as a means of magic or Voodoo.
-         The lead character in the movie finds hers turning into a zombie under the control of a voodoo master.
-         <br>
-          Zombies continued to grow in populartity with the production of the iconic film <i>Night of the Living Dead</i> in 1968 and the following movie <i>Dawn of the Dead</i>in 1978.
-         <br>
-          At present, Zombies are even more popular than ever thanks to series like <i>The Walking Dead</i> and popular movies including <i>Zombieland</i>, <i>Warm Bodies</i>, <i>World War Z</i>, as well as many animated motion pictures and cartoon series that make references to zombies and apocolypic zombie situations.
-          <br>
-            While Zombies are more popular now, the theory of what they are and how they survived has been changed significantly.
-            Previously, they were believed to be corpses raised from the dead by means of magic, but with the current culture, most pop culture influence imply some mass epidemic that has swept the world that causes bodies to arise from the ground post-mortum and seek to feed on human flesh as a means of fulfilling their most basic previously human needs.
-            
-          
-        <br>
-          <br>
-            <br>
-              <br>
-                
-        
-        </small>
-        In the graphics depicted below, we are able to take a short-term look at how Zombies have increased in interest in comparison to popular current media sources.
-        As you can see, zombies as a whole has made a gradual increase in popularity while certain specific instances of zombies in pop culture peaks only to fall back to little interest.
-        <br>
-        Additionally, we are able to see how zombies popularityu compares with other types of fantasy creatures such as witches, vampires, and werewolves, all of which are also prevalent in pop culture currently. 
-        
-        
-        </p>
-<div id="area1"></div>
-
-<div id="area2"></div>
-
-       <div class="row">
-        
-        <div class="col-md-6" style="float: left">
-       
+<body></body>
 <script type="text/javascript">
 var margin = {top: 20, right: 220, bottom: 30, left: 50},
-    width = 550 - margin.left - margin.right,
-    height = 300 - margin.top - margin.bottom;
+    width = 1000 - margin.left - margin.right,
+    height = 500 - margin.top - margin.bottom;
 
 
 var format = d3.time.format("%b %Y");
@@ -174,7 +82,7 @@ var line = d3.svg.line()
     .x(function(d,i) { return x(range[i]); })
     .y(function(d) { return y(d); });
 
-var svg = d3.select("#area1").append("svg")
+var svg = d3.select("body").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
   .append("g")
@@ -290,10 +198,58 @@ d3.csv("Zombiedata2.csv", function(raw) {
 </script>
 
 
+
+<!DOCTYPE html>
+<title>Creature Comparison</title>
+<meta charset="utf-8">
+<style>
+body {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+path.invisible {
+  fill: none;
+  stroke: rgba(0,0,0,0);
+  stroke-width: 8px;
+}
+
+text.label {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+</style>
+
+<script src="http://mbostock.github.com/d3/d3.v2.js"></script>
+
+<script src="http://documentcloud.github.com/underscore/underscore.js"></script>
+
+<body></body>
 <script type="text/javascript">
 var margin2 = {top: 20, right: 220, bottom: 30, left: 50},
-    width2 = 550 - margin2.left - margin2.right,
-    height2 = 300 - margin2.top - margin2.bottom;
+    width2 = 1000 - margin2.left - margin2.right,
+    height2 = 500 - margin2.top - margin2.bottom;
 
 
 var format2 = d3.time.format("%b %Y");
@@ -327,7 +283,7 @@ var line2 = d3.svg.line()
     .x(function(d,i) { return x2(range2[i]); })
     .y(function(d) { return y2(d); });
 
-var svg2 = d3.select("#area2").append("svg")
+var svg2 = d3.select("body").append("svg")
     .attr("width", width2 + margin2.left + margin2.right)
     .attr("height", height2 + margin2.top + margin2.bottom)
   .append("g")
@@ -441,54 +397,5 @@ d3.csv("creaturetypes.csv", function(raw) {
       });
 });
 </script>
-
-      </div>
-        </div>
-        
-        
-        <div class="col-md-6">
-         
-
-        </div>
-        
-       </div>
-        
-        </div>
-       
-          </div>
-      
-    </div>
-
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Zombies in Literature</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          </div>
-        <div class="col-md-4">
-          <h2>Zombies in Film</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-         </div>
-        <div class="col-md-4">
-          <h2>Zombies on Twitter</h2>
-          <p><a class="twitter-timeline" href="https://twitter.com/search?q=%23zombies" data-widget-id="408711704491483136">Tweets about "#zombies"</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-</p></div>
-      </div>
-
-      <hr>
-
-      <footer>
-        <p>&copy; Company 2013</p>
-      </footer>
-    </div> <!-- /container -->
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="dist/js/bootstrap.min.js"></script>
-  </body>
+</body>
 </html>
