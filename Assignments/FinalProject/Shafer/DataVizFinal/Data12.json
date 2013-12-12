@@ -1,0 +1,201 @@
+{
+ "name": "graph",
+ "children": [
+  {
+   "name": "UNL Student Body by Country",
+   "children": [
+    {
+     "name": "Asia",
+     "children": [
+      {"name": "Afghanistan", "size": 5},
+      {"name": "Armenia", "size": 3},
+      {"name": "Azerbaijan", "size": 1},
+      {"name": "Bangladesh", "size": 7},
+      {"name": "Bhutan", "size": 2},
+      {"name": "Brunei", "size": 1},
+      {"name": "Myanmar", "size": 1},
+      {"name": "Cambodia", "size": 1},
+      {"name": "China", "size": 809},
+      {"name": "Georgia", "size": 1},
+      {"name": "Hong Kong", "size": 7},
+      {"name": "India", "size": 147},
+      {"name": "Indonesia", "size": 9},
+      {"name": "Iran", "size": 38},
+      {"name": "Iraq", "size": 9},
+      {"name": "Israel", "size": 1},
+      {"name": "Japan", "size": 25},
+      {"name": "Jordan", "size": 5},
+      {"name": "Kazakstan", "size": 1},
+      {"name": "Kuwait", "size": 3},
+      {"name": "Kyrgyzstan", "size": 1},
+      {"name": "Lebanon", "size": 3},
+      {"name": "Malaysia", "size": 136},
+      {"name": "Macao", "size": 1},
+      {"name": "Mongolia", "size": 1},
+      {"name": "Nepal", "size": 33},
+      {"name": "Oman", "size": 0},
+      {"name": "Pakistan", "size": 12},
+      {"name": "Palestinian Territory", "size": 2},
+      {"name": "Philippines", "size": 6},
+      {"name": "Qatar", "size": 3},
+      {"name": "Saudi Arabia", "size": 29},
+      {"name": "Singapore", "size": 4},
+      {"name": "South Korea", "size": 78},
+      {"name": "Sri Lanka", "size": 7},
+      {"name": "Syria", "size": 4},
+      {"name": "Taiwan", "size": 26},
+      {"name": "Tajikistan", "size": 5},
+      {"name": "Thailand", "size": 22},
+      {"name": "Turkey", "size": 11},
+      {"name": "Turkmenistan", "size": 2},
+      {"name": "United Arab Emirates", "size": 3},
+      {"name": "Uzbekistan", "size": 0},
+      {"name": "Vietnam", "size": 52},
+      {"name": "West Bank", "size": 0},
+      {"name": "Yemen", "size": 0}
+
+     ]
+    },
+    {
+     "name": "Africa",
+     "children": [
+      {"name": "Algeria", "size": 1},
+      {"name": "Benin", "size": 4},
+      {"name": "Botswana", "size": 1},
+      {"name": "Burkina Faso", "size": 4},
+      {"name": "Cameroon", "size": 5},
+      {"name": "Chad", "size": 1},
+      {"name": "D.R. of Congo", "size": 6},
+      {"name": "Cote D'Ivoire", "size": 1},
+      {"name": "Egypt", "size": 10},
+      {"name": "Eritrea", "size": 2},
+      {"name": "Ethiopia", "size": 10},
+      {"name": "Gabon", "size": 1},
+      {"name": "Gambia", "size": 0},
+      {"name": "Ghana", "size": 9},
+      {"name": "Kenya", "size": 10},
+      {"name": "Lesotho", "size": 1},
+      {"name": "Liberia", "size": 1},
+      {"name": "Libya", "size": 1},
+      {"name": "Malawi", "size": 1},
+      {"name": "Mauritius", "size": 1},
+      {"name": "Mozambique", "size": 0},
+      {"name": "Morocco", "size": 1},
+      {"name": "Niger", "size": 1},
+      {"name": "Nigeria", "size": 9},
+      {"name": "Rwanda", "size": 5},
+      {"name": "Senegal", "size": 3},
+      {"name": "Sierra Leone", "size": 2},
+      {"name": "South Africa", "size": 3},
+      {"name": "Sudan", "size": 11},
+      {"name": "Tanzania", "size": 0},
+      {"name": "Togo", "size": 18},
+      {"name": "Tunisia", "size": 3},
+      {"name": "Uganda", "size": 2},
+      {"name": "Zambia", "size": 7},
+      {"name": "Zimbabwe", "size": 3}
+ 
+     ]
+    },
+    {
+     "name": "Europe",
+     "children": [
+      {"name": "Albania", "size": 3},
+      {"name": "Austria", "size": 1},
+      {"name": "Belarus", "size": 1},
+      {"name": "Bosnia and Herzegovina", "size": 1},
+      {"name": "Bulgaria", "size": 3},
+      {"name": "Croatia", "size": 2},
+      {"name": "Czech Republic", "size": 8},
+      {"name": "Finland", "size": 1},
+      {"name": "France", "size": 9},
+      {"name": "Germany", "size": 39},
+      {"name": "Greece", "size": 3},
+      {"name": "Hungary", "size": 2},
+      {"name": "Iceland", "size": 1},
+      {"name": "Ireland", "size": 0},
+      {"name": "Italy", "size": 5},
+      {"name": "Kosovo", "size": 0},
+      {"name": "Lativa", "size": 4},
+      {"name": "Lithuania", "size": 0},
+      {"name": "Macedonia", "size": 2},
+      {"name": "Malta", "size": 1},
+      {"name": "Moldova", "size": 0},
+      {"name": "Montenegro", "size": 0},
+      {"name": "Netherlands", "size": 2},
+      {"name": "Norway", "size": 0},
+      {"name": "Poland", "size": 11},
+      {"name": "Portugal", "size": 0},
+      {"name": "Romania", "size": 4},
+      {"name": "Russia", "size": 14},
+      {"name": "Serbia", "size": 2},
+      {"name": "Slovakia", "size": 1},
+      {"name": "Slovenia", "size": 1},
+      {"name": "Spain", "size": 12},
+      {"name": "Sweden", "size": 3},
+      {"name": "Switzerland", "size": 0},
+      {"name": "Ukraine", "size": 10},
+      {"name": "United Kingdom", "size": 8},
+      {"name": "Yugoslavia", "size": 4}
+      
+     ]
+    },
+        {
+     "name": "North America",
+     "children": [
+      {"name": "United States", "size": 22555},
+      {"name": "Canada", "size": 34},
+      {"name": "Mexico", "size": 46},
+      {"name": "Bahamas", "size": 4},
+      {"name": "Barbados", "size": 1},
+      {"name": "Belize", "size": 3},
+      {"name": "Costa Rica", "size": 5},
+      {"name": "Dominican Republic", "size": 1},
+      {"name": "El Salvador", "size": 3},
+      {"name": "Guatemala", "size": 2},
+      {"name": "Haiti", "size": 0},
+      {"name": "Honduras", "size": 3},
+      {"name": "Jamaica", "size": 8},
+      {"name": "Nicaragua", "size": 5},
+      {"name": "Panama", "size": 4},
+      {"name": "Puerto Rico", "size": 0},
+      {"name": "Trinidad & Tobagoa", "size": 1}
+      
+     ]
+    },
+    {
+     "name": "South America",
+     "children": [
+      {"name": "Brazil", "size": 36},
+      {"name": "Argentina", "size": 9},
+      {"name": "Bolivia", "size": 2},
+      {"name": "Chile", "size": 3},
+      {"name": "Colombia", "size": 21},
+      {"name": "Ecuador", "size": 7},
+      {"name": "Paraguay", "size": 1},
+      {"name": "Peru", "size": 12},
+      {"name": "Uruguay", "size": 3},
+      {"name": "Venezuela", "size": 4}
+      
+     ]
+    },
+    {
+     "name": "Oceania",
+     "children": [
+      {"name": "Australia", "size": 6},
+      {"name": "New Zealand", "size": 1},
+      {"name": "Micronesia", "size": 1}
+      
+     ]
+    },
+    {
+    "name": "Other",
+     "children": [
+      {"name": "Other", "size": 0}
+    
+   ]
+  }
+ ]
+}
+]
+}
