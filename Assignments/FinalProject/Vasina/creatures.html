@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<title>Constraint Relaxation - Prices</title>
 <meta charset="utf-8">
 <style>
+
 body {
   font: 10px sans-serif;
 }
@@ -13,60 +13,29 @@ body {
   shape-rendering: crispEdges;
 }
 
-.x.axis path {
-  display: none;
-}
-
-.line {
-  fill: none;
-  stroke: steelblue;
-  stroke-width: 1.5px;
-  -webkit-transition: opacity 0.3s;
-  -moz-transition: opacity 0.3s;
-  -o-transition: opacity 0.3s;
-  transition: opacity 0.3s;
-}
-
-path.invisible {
-  fill: none;
-  stroke: rgba(0,0,0,0);
-  stroke-width: 8px;
-}
-
-text.label {
-  font-size: 12px;
-  font-weight: bold;
+.browser text {
+  text-anchor: end;
 }
 
 </style>
+<body>
+<script src="http://d3js.org/d3.v3.js"></script>
+<script>
 
-<script src="http://mbostock.github.com/d3/d3.v2.js"></script>
-
-<script src="http://documentcloud.github.com/underscore/underscore.js"></script>
-
-<body></body>
-<script type="text/javascript">
-var margin = {top: 20, right: 220, bottom: 30, left: 50},
-    width = 1000 - margin.left - margin.right,
+var margin = {top: 20, right: 20, bottom: 30, left: 50},
+    width = 960 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
-
-var format = d3.time.format("%b %Y");
-
-var start = format.parse("Jan 2010");
-var end = format.parse("Nov 2013");
-var range = d3.time.months(start,end);
+var parseDate = d3.time.format("%y-%b-%d").parse,
+    formatPercent = d3.format(".0%");
 
 var x = d3.time.scale()
-    .range([0,width])
-    .domain([start,end]);
+    .range([0, width]);
 
 var y = d3.scale.linear()
     .range([height, 0]);
 
-var color = function(i) {
-  return d3.hcl(48*i,95,45).toString();
-};
+var color = d3.scale.category20();
 
 var xAxis = d3.svg.axis()
     .scale(x)
@@ -74,13 +43,16 @@ var xAxis = d3.svg.axis()
 
 var yAxis = d3.svg.axis()
     .scale(y)
-    .orient("left");
+    .orient("left")
+    .tickFormat(formatPercent);
 
-var line = d3.svg.line()
-    .interpolate("basis")
-    .defined(function(d) { return d != null; })
-    .x(function(d,i) { return x(range[i]); })
-    .y(function(d) { return y(d); });
+var area = d3.svg.area()
+    .x(function(d) { return x(d.date); })
+    .y0(function(d) { return y(d.y0); })
+    .y1(function(d) { return y(d.y0 + d.y); });
+
+var stack = d3.layout.stack()
+    .values(function(d) { return d.values; });
 
 var svg = d3.select("body").append("svg")
     .attr("width", width + margin.left + margin.right)
@@ -88,28 +60,40 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.csv("creaturetypes.csv", function(raw) {
-  var data = [];
-  var goods = _(raw).pluck("Name");
+d3.tsv("creaturetypes.tsv", function(error, data) {
+  color.domain(d3.keys(data[0]).filter(function(key) { return key !== "date"; }));
 
-  _(raw).each(function(series) {
-    var value = {};
-    data.push({
-      id: series["Series ID"],
-      name: series["Name"],
-      values: _(range).map(function(month) {
-                return parseFloat(series[format(month)]) || null;
-              })
-    });
+  data.forEach(function(d) {
+    d.date = parseDate(d.date);
   });
 
-  var values = _(data).chain().pluck('values').flatten().value();
+  var browsers = stack(color.domain().map(function(name) {
+    return {
+      name: name,
+      values: data.map(function(d) {
+        return {date: d.date, y: d[name] / 100};
+      })
+    };
+  }));
 
-  y.domain([
-    0,
-    d3.max(values)
-  ]);
+  x.domain(d3.extent(data, function(d) { return d.date; }));
 
+  var browser = svg.selectAll(".browser")
+      .data(browsers)
+    .enter().append("g")
+      .attr("class", "browser");
+
+  browser.append("path")
+      .attr("class", "area")
+      .attr("d", function(d) { return area(d.values); })
+      .style("fill", function(d) { return color(d.name); });
+
+  browser.append("text")
+      .datum(function(d) { return {name: d.name, value: d.values[d.values.length - 1]}; })
+      .attr("transform", function(d) { return "translate(" + x(d.value.date) + "," + y(d.value.y0 + d.value.y / 2) + ")"; })
+      .attr("x", -6)
+      .attr("dy", ".35em")
+      .text(function(d) { return d.name; });
 
   svg.append("g")
       .attr("class", "x axis")
@@ -118,81 +102,7 @@ d3.csv("creaturetypes.csv", function(raw) {
 
   svg.append("g")
       .attr("class", "y axis")
-      .call(yAxis)
-    .append("text")
-      .attr("transform", "rotate(-90)")
-      .attr("y", 6)
-      .attr("dy", ".71em")
-      .style("text-anchor", "end")
-      .style("font-weight", "bold")
-      .text("Interest");
-
-  var series = svg.selectAll(".series")
-      .data(data)
-    .enter().append("g")
-      .attr("class", "series");
-
-  series.append("path")
-      .attr("class", "line")
-      .attr("d", function(d) { return line(d.values); })
-      .style("stroke", function(d,i) { return color(i); });
-
-  series.append("path")
-      .attr("class", "invisible hover")
-      .attr("d", function(d) { return line(d.values); });
-
-  var labels = data.map(function(d) { return {name: d.name, y: y(d.values[d.values.length - 1])}});
-
-  series.append("text")
-      .attr("class", "label hover")
-      .data(labels)
-      .attr("transform", function(d) { return "translate(" + x(end) + "," + d.y + ")"; })
-      .attr("x", 3)
-      .attr("dy", ".35em")
-      .style("fill", function(d,i) { return color(i); })
-      .text(function(d) { return d.name; });
-
-  // constraint relaxation on labels
-  var alpha = 0.5;
-  var spacing = 12;
-  function relax() {
-    var again = false;
-    labels.forEach(function(a,i) {
-      labels.slice(i+1).forEach(function(b) {
-        var dy = a.y - b.y;
-        if (Math.abs(dy) < spacing) {
-          again = true;
-          var sign = dy > 0 ? 1 : -1;
-          a.y += sign*alpha;
-          b.y -= sign*alpha;
-        }
-      });
-    });
-    d3.selectAll(".label")
-      .attr("transform", function(d) { return "translate(" + x(end) + "," + d.y + ")"; });
-    if (again) setTimeout(relax,20);
-  };
-
-  relax();
-
-  series.selectAll(".hover")
-      .on("mouseover", function(d,i) {
-        d3.selectAll(".line")
-          .style("opacity", 0.12)
-          .filter(function(p) { return p.name == d.name; })
-          .style("opacity", 1)
-          .style("stroke-width", 2.5);
-        d3.selectAll(".series text")
-          .style("opacity", 0)
-          .filter(function(p) { return p.name == d.name; })
-          .style("opacity", 1);
-      })
-      .on("mouseout", function(d,i) {
-        d3.selectAll(".line")
-          .style("opacity", 1)
-          .style("stroke-width", null);
-        d3.selectAll(".series text")
-          .style("opacity", 1);
-      });
+      .call(yAxis);
 });
+
 </script>
