@@ -1,1 +1,94 @@
-Your stuff goes here.
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <body>
+        <h1>People's City Mission Contributions</h1>
+        <p>The People's City Mission provides services to Lincoln's homeless community.</p>
+        <p>The following shows their contributions from 2003-2012 in Millions of US dollars.</p>
+        </body>
+        
+        <meta charset="utf-8">
+        <title>D3 Test</title>
+        <script type="text/javascript" src="d3/d3.v3.js"></script>
+        <script src="http://d3js.org/d3.v3.min.js"></script>
+        <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.min.js"></script>
+        
+		<style>
+                body {background-color: Ivory}
+                h1 {color: #000}
+                h1 {font-family: Tahoma}
+                p {font-family: Tahoma}
+                p2 {font-family: Tahoma}
+                .chart div {
+  font: 10px sans-serif;
+  background-color: orange;
+  text-align: right;
+  padding: 5px;
+  margin: 1px;
+  color: white;
+}
+
+</style>
+<div class="chart">
+  <div style="width: 60px;">2.326840</div>
+  <div style="width: 105px;">3.434274</div>
+  <div style="width: 160px;">4.832943</div>
+  <div style="width: 210px;">9.477053</div>
+  <div style="width: 420px;">11.004254</div>
+  <div style="width: 340px;">10.760059</div>
+  <div style="width: 255px;">10.240542</div>
+  <div style="width: 300px;">10.428049</div>
+  <div style="width: 225px;">9.577166</div>
+</div>
+		<style>
+                p2 {font-family: Tahoma}
+</style>
+              
+<p2>The chart below illustrates the economic recession patterns in recent years in Billions of US dollars.</p2>
+
+
+<div class="chart">
+  <div style="width: 40px;">11089.3</div>
+  <div style="width: 110px;">11797.8</div>
+  <div style="width: 135px;">12564.3</div>
+  <div style="width: 170px;">13314.5</div>
+  <div style="width: 2px;">13961.8</div>
+  <div style="width: 230px;">14219.3</div>
+  <div style="width: 205px;">13898.3</div>
+  <div style="width: 365px;">14419.4</div>
+  <div style="width: 420px;">14991.3</div>
+  <p2>Source: tradingeconomics.com</p2>
+    
+</div>	
+    </head>
+    <body>
+        <script type="text/javascript">
+            
+
+		var dataset = [1.526081,2.326840,3.434274,4.832943,9.477053,11.004254,10.760059,10.240542,10.428049,9.577166,];
+		d3.select("body").selectAll("div")
+		    .data(dataset)
+		    .enter()
+		    .append("div")
+		    .attr("class", "bar")
+			.style("height", function(d) {
+			    var barHeight = d * 5;  //Scale up by factor of 5
+			    return barHeight + "px";
+			});
+    <body>
+        <script type="text/javascript">
+            
+
+		var dataset = [1.526081,2.326840,3.434274,4.832943,9.477053,11.004254,10.760059,10.240542,10.428049,9.577166,];
+		d3.select("body").selectAll("div")
+		    .data(dataset)
+		    .enter()
+		    .append("div")
+		    .attr("class", "bar")
+			.style("height", function(d) {
+			    var barHeight = d * 5;  //Scale up by factor of 5
+			    return barHeight + "px";
+			});
+        </script>
+    </body>
+</html>     
