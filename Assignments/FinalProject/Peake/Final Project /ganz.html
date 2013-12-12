@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+<title>Joe Ganz Career Data</title>
+
+<style>
+
+body {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.bar {
+  fill: steelblue;
+}
+
+.x.axis path {
+  display: none;
+}
+
+</style>
+
+
+</head>
+
+<body>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<div id="container">
+		<div id="header">
+        	<h1>#Huskers</h1>
+            <h2>A project by Gage Peake</h2>
+        </div>   
+        
+        <div id="menu">
+        	<ul>
+            	<li class="menuitem"><a href="file:///Users/gagepeake/JOUR491-Data-Visualization/Assignments/FinalProject/Peake/Final%20Project%20GP.html">Home</a></li>
+                <li class="menuitem"><a href="http://www.huskers.com">Nebraska Football</a></li>
+              <li class="menuitem"><a href="http://www.twitter.com/Gage_Peake/">Contact</a></li>
+            </ul>
+        </div>
+        
+        <div id="leftmenu">
+
+        <div id="leftmenu_top"></div>
+
+				<div id="leftmenu_main">    
+                
+                <h3>Quarterbacks</h3>
+                        
+                <ul>
+                    <li><a href="frost.html">Scott Frost</a></li>
+                    <li><a href="crouch.html">Eric Crouch</a></li>
+                    <li><a href="lord.html">Jammal Lord</a></li>
+                    <li><a href="taylor.html">Zac Taylor </a></li>
+                    <li><a href="ganz.html">Joe Ganz</a></li>
+                    <li><a href="martinez.html">Taylor Martinez</a></li>
+
+                    
+                </ul>
+</div>
+                
+                
+              <div id="leftmenu_bottom"></div>
+        </div>
+        
+        
+        
+        
+		<div id="content">
+        
+    
+        <div id="content_top"></div>
+        <div id="content_main">
+        	<h2>Joe Ganz Career Information</h2>
+       	
+           	<p>Quarterback Joe Ganz took the reins of the Nebraska offense late in the 2007 season and immediately began re-writing the Cornhusker record book. Ganz went on to post one of the most prolific offensive seasons in school history in 2008, and by the end of his career he held more than 20 school records.
+
+The 6-1, 210-pound Ganz engineered a Nebraska offense that became one of the most complete units in the country in the second half of the 2008 season. The Huskers ranked in the top 20 nationally in passing offense, total offense and scoring offense. Ganz also transformed Nebraska into one of the most efficient units in the country. The Huskers ranked second in the nation in time of possession and were among the Big 12 leaders in third-down conversions.
+
+In the process of leading the Husker offense Ganz, set Nebraska season records for with 3,568 passing yards and 3,826 yards of total offense. Ganz was extremely accurate throughout the season, completing 67.9 percent of his passes and set NU’s record for season completions and percentage. He has also shattered the Nebraska career record for accuracy by completing nearly 66 percent of his 549 career pass attempts. He threw for 25 touchdown passes in 2008, the second-most in NU history and his 45 career touchdown passes also rank second in the Nebraska record book.
+
+Ganz finished his senior season ranked among Big 12 and national leaders in several categories, including passing yards per game, total offense and pass efficiency. Following his final game, Ganz’s career pass efficiency ranking was fourth among all 2008 active players trailing only Heisman finalists Sam Bradford, Tim Tebow and Colt McCoy.
+
+Ganz threw for more than 300 yards five times in 2008, and topped that number eight times in 16 career starts. In 2008, Ganz also showed his dual-threat ability. He ran for 258 yards and five touchdowns on the season, including 95 yards and two touchdowns at Kansas State–the most rushing yards by an NU quarterback in five seasons. Ganz also joined elite company against New Mexico State when he became just the third player in school history to rush, pass and catch a touchdown in the same game. The only other Huskers to accomplish that feat are Heisman Trophy winners Johnny Rodgers and Eric Crouch.
+
+The leadership of Ganz allowed Nebraska to surpass 30 points 10 times in 2008 and in 13 of his 16 career starts. The Huskers passed for at least 200 yards in all 12 games in 2008 and gained more than 400 yards of total offense nine times. His poise was evident as Nebraska rallied from a second-half deficit to win four games in 2008, including three of the season’s final four games.
+
+Ganz was voted one of four team captains for the 2008 season. Ganz was also named the Huskers’ MVP and capped his career by being named the MVP of the 2009 Konica Minolta Gator Bowl. </p>
+                
+                <p>Ganz threw for 1,399 yards and 15 touchdowns in his three 2007 starts, while posting the top two passing days in school history. His 15 touchdown passes in a three-game stretch were a school record and he guided Nebraska to an average of 598.7 yards of total offense in his three starts. Ganz threw for 405 yards and four touchdowns in his first start at Kansas, then threw for a school-record 510 yards and an NU record seven touchdowns in a rout of Kansas State. He added 484 yards and four touchdowns at Colorado. *source www.Huskers.com</p>
+          <div id="chart"></div>
+
+<script>
+
+var margin = {top: 20, right: 20, bottom: 30, left: 40},
+    width = 500 - margin.left - margin.right,
+    height = 300 - margin.top - margin.bottom;
+
+var x0 = d3.scale.ordinal()
+    .rangeRoundBands([0, width], .1);
+
+var x1 = d3.scale.ordinal();
+
+var y = d3.scale.linear()
+    .range([height, 0]);
+
+var color = d3.scale.ordinal()
+    .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
+
+var xAxis = d3.svg.axis()
+    .scale(x0)
+    .orient("bottom");
+
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left")
+    .tickFormat(d3.format(".2s"));
+
+var svg = d3.select("#chart").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+d3.csv("ganz.csv", function(error, data) {
+  var ageNames = d3.keys(data[0]).filter(function(key) { return key !== "Year"; });
+
+  data.forEach(function(d) {
+    d.ages = ageNames.map(function(name) { return {name: name, value: +d[name]}; });
+  });
+
+  x0.domain(data.map(function(d) { return d.Year; }));
+  x1.domain(ageNames).rangeRoundBands([0, x0.rangeBand()]);
+  y.domain([0, d3.max(data, function(d) { return d3.max(d.ages, function(d) { return d.value; }); })]);
+
+  svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis);
+
+  svg.append("g")
+      .attr("class", "y axis")
+      .call(yAxis)
+    .append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 6)
+      .attr("dy", ".71em")
+      .style("text-anchor", "end")
+      .text("Stat number");
+
+  var state = svg.selectAll(".state")
+      .data(data)
+    .enter().append("g")
+      .attr("class", "g")
+      .attr("transform", function(d) { return "translate(" + x0(d.Year) + ",0)"; });
+
+  state.selectAll("rect")
+      .data(function(d) { return d.ages; })
+    .enter().append("rect")
+      .attr("width", x1.rangeBand())
+      .attr("x", function(d) { return x1(d.name); })
+      .attr("y", function(d) { return y(d.value); })
+      .attr("height", function(d) { return height - y(d.value); })
+      .style("fill", function(d) { return color(d.name); });
+
+  var legend = svg.selectAll(".legend")
+      .data(ageNames.slice().reverse())
+    .enter().append("g")
+      .attr("class", "legend")
+      .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+
+  legend.append("rect")
+      .attr("x", width - 18)
+      .attr("width", 18)
+      .attr("height", 18)
+      .style("fill", color);
+
+  legend.append("text")
+      .attr("x", width - 24)
+      .attr("y", 9)
+      .attr("dy", ".35em")
+      .style("text-anchor", "end")
+      .text(function(d) { return d; });
+
+});
+
+</script>
