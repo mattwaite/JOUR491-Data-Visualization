@@ -1,0 +1,11 @@
+[    
+      {"name": "Afghanistan", "size": 6,"imports": ["UNL"]},
+      {"name": "Armenia", "size": 2, "imports": ["UNL"]},
+      {"name": "Azerbaijan", "size": 1, "imports": ["UNL"]},
+      {"name": "UNL","size": 23573, "imports": [
+        "Afghanistan",
+	"Armenia",
+	"Azerbaijan"
+        ]
+    }
+]
