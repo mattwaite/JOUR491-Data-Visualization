@@ -1,0 +1,1099 @@
+date,city,temp
+20111001, New York,63.4
+20111002, New York,58
+20111003, New York,53.3
+20111004, New York,55.7
+20111005, New York,64.2
+20111006, New York,58.8
+20111007, New York,57.9
+20111008, New York,61.8
+20111009, New York,69.3
+20111010, New York,71.2
+20111011, New York,68.7
+20111012, New York,61.8
+20111013, New York,63
+20111014, New York,66.9
+20111015, New York,61.7
+20111016, New York,61.8
+20111017, New York,62.8
+20111018, New York,60.8
+20111019, New York,62.1
+20111020, New York,65.1
+20111021, New York,55.6
+20111022, New York,54.4
+20111023, New York,54.4
+20111024, New York,54.8
+20111025, New York,57.9
+20111026, New York,54.6
+20111027, New York,54.4
+20111028, New York,42.5
+20111029, New York,40.9
+20111030, New York,38.6
+20111031, New York,44.2
+20111101, New York,49.6
+20111102, New York,47.2
+20111103, New York,50.1
+20111104, New York,50.1
+20111105, New York,43.5
+20111106, New York,43.8
+20111107, New York,48.9
+20111108, New York,55.5
+20111109, New York,53.7
+20111110, New York,57.7
+20111111, New York,48.5
+20111112, New York,46.8
+20111113, New York,51.1
+20111114, New York,56.8
+20111115, New York,59.7
+20111116, New York,56.5
+20111117, New York,49.6
+20111118, New York,41.5
+20111119, New York,44.3
+20111120, New York,54
+20111121, New York,54.1
+20111122, New York,49.4
+20111123, New York,50
+20111124, New York,44
+20111125, New York,50.3
+20111126, New York,52.1
+20111127, New York,49.6
+20111128, New York,57.2
+20111129, New York,59.1
+20111130, New York,50.6
+20111201, New York,44.3
+20111202, New York,43.9
+20111203, New York,42.1
+20111204, New York,43.9
+20111205, New York,50.2
+20111206, New York,54.2
+20111207, New York,54.6
+20111208, New York,43.4
+20111209, New York,42.2
+20111210, New York,45
+20111211, New York,33.8
+20111212, New York,36.8
+20111213, New York,38.6
+20111214, New York,41.9
+20111215, New York,49.6
+20111216, New York,50.2
+20111217, New York,40.6
+20111218, New York,29.1
+20111219, New York,33.7
+20111220, New York,45.8
+20111221, New York,47.4
+20111222, New York,54.4
+20111223, New York,47.8
+20111224, New York,34.9
+20111225, New York,35.9
+20111226, New York,43.6
+20111227, New York,42.9
+20111228, New York,46.2
+20111229, New York,30.8
+20111230, New York,40.8
+20111231, New York,49.8
+20120101, New York,46.3
+20120102, New York,43.2
+20120103, New York,30.3
+20120104, New York,19.2
+20120105, New York,32.1
+20120106, New York,41.2
+20120107, New York,47
+20120108, New York,46
+20120109, New York,34.7
+20120110, New York,39.4
+20120111, New York,40.4
+20120112, New York,45.4
+20120113, New York,40.7
+20120114, New York,30.4
+20120115, New York,23.9
+20120116, New York,22.6
+20120117, New York,39.8
+20120118, New York,43.2
+20120119, New York,26.3
+20120120, New York,32.8
+20120121, New York,27.4
+20120122, New York,25
+20120123, New York,39.4
+20120124, New York,48.7
+20120125, New York,43
+20120126, New York,37.1
+20120127, New York,48.2
+20120128, New York,43.7
+20120129, New York,40.1
+20120130, New York,38
+20120131, New York,43.5
+20120201, New York,50.4
+20120202, New York,45.8
+20120203, New York,37.5
+20120204, New York,40.8
+20120205, New York,36.5
+20120206, New York,39.1
+20120207, New York,43.2
+20120208, New York,36.5
+20120209, New York,36.5
+20120210, New York,38.3
+20120211, New York,36.9
+20120212, New York,29.7
+20120213, New York,33.1
+20120214, New York,39.6
+20120215, New York,42.3
+20120216, New York,39.7
+20120217, New York,46
+20120218, New York,41.2
+20120219, New York,39.8
+20120220, New York,38.1
+20120221, New York,37.1
+20120222, New York,45.5
+20120223, New York,50.6
+20120224, New York,42.7
+20120225, New York,42.6
+20120226, New York,36.9
+20120227, New York,40.9
+20120228, New York,45.9
+20120229, New York,40.7
+20120301, New York,41.3
+20120302, New York,36.8
+20120303, New York,47.6
+20120304, New York,44.2
+20120305, New York,38.5
+20120306, New York,32.9
+20120307, New York,43.3
+20120308, New York,51.2
+20120309, New York,47.8
+20120310, New York,37.2
+20120311, New York,42.9
+20120312, New York,48.8
+20120313, New York,52.6
+20120314, New York,60.5
+20120315, New York,47.2
+20120316, New York,44.7
+20120317, New York,48.2
+20120318, New York,48.2
+20120319, New York,53.1
+20120320, New York,57.8
+20120321, New York,57.5
+20120322, New York,57.3
+20120323, New York,61.7
+20120324, New York,55.8
+20120325, New York,48.4
+20120326, New York,49.8
+20120327, New York,39.6
+20120328, New York,49.7
+20120329, New York,56.8
+20120330, New York,46.5
+20120331, New York,42.2
+20120401, New York,45.3
+20120402, New York,48.1
+20120403, New York,51.2
+20120404, New York,61
+20120405, New York,50.7
+20120406, New York,48
+20120407, New York,51.1
+20120408, New York,55.7
+20120409, New York,58.3
+20120410, New York,55
+20120411, New York,49
+20120412, New York,51.7
+20120413, New York,53.1
+20120414, New York,55.2
+20120415, New York,62.3
+20120416, New York,62.9
+20120417, New York,69.3
+20120418, New York,59
+20120419, New York,54.1
+20120420, New York,56.5
+20120421, New York,58.2
+20120422, New York,52.4
+20120423, New York,51.6
+20120424, New York,49.3
+20120425, New York,52.5
+20120426, New York,50.5
+20120427, New York,51.9
+20120428, New York,47.4
+20120429, New York,54.1
+20120430, New York,51.9
+20120501, New York,57.4
+20120502, New York,53.7
+20120503, New York,53.1
+20120504, New York,57.2
+20120505, New York,57
+20120506, New York,56.6
+20120507, New York,54.6
+20120508, New York,57.9
+20120509, New York,59.2
+20120510, New York,61.1
+20120511, New York,59.7
+20120512, New York,64.1
+20120513, New York,65.3
+20120514, New York,64.2
+20120515, New York,62
+20120516, New York,63.8
+20120517, New York,64.5
+20120518, New York,61
+20120519, New York,62.6
+20120520, New York,66.2
+20120521, New York,62.7
+20120522, New York,63.7
+20120523, New York,66.4
+20120524, New York,64.5
+20120525, New York,65.4
+20120526, New York,69.4
+20120527, New York,71.9
+20120528, New York,74.4
+20120529, New York,75.9
+20120530, New York,72.9
+20120531, New York,72.5
+20120601, New York,67.2
+20120602, New York,68.3
+20120603, New York,67.7
+20120604, New York,61.9
+20120605, New York,58.3
+20120606, New York,61.7
+20120607, New York,66.7
+20120608, New York,68.7
+20120609, New York,72.2
+20120610, New York,72.6
+20120611, New York,69.2
+20120612, New York,66.9
+20120613, New York,66.7
+20120614, New York,67.7
+20120615, New York,68.5
+20120616, New York,67.5
+20120617, New York,64.2
+20120618, New York,61.7
+20120619, New York,66.4
+20120620, New York,77.9
+20120621, New York,88.3
+20120622, New York,82.2
+20120623, New York,77
+20120624, New York,75.4
+20120625, New York,70.9
+20120626, New York,65.9
+20120627, New York,73.5
+20120628, New York,77.4
+20120629, New York,79.6
+20120630, New York,84.2
+20120701, New York,81.8
+20120702, New York,82.5
+20120703, New York,80.2
+20120704, New York,77.8
+20120705, New York,86.1
+20120706, New York,79.9
+20120707, New York,83.5
+20120708, New York,81.5
+20120709, New York,77.8
+20120710, New York,76.1
+20120711, New York,76.3
+20120712, New York,75.8
+20120713, New York,77.2
+20120714, New York,79.3
+20120715, New York,78.9
+20120716, New York,79.6
+20120717, New York,83.3
+20120718, New York,84.3
+20120719, New York,75.1
+20120720, New York,68.4
+20120721, New York,68.4
+20120722, New York,72.2
+20120723, New York,75.6
+20120724, New York,82.6
+20120725, New York,78.4
+20120726, New York,77
+20120727, New York,79.4
+20120728, New York,77.4
+20120729, New York,72.5
+20120730, New York,72.9
+20120731, New York,73.6
+20120801, New York,75
+20120802, New York,77.7
+20120803, New York,79.7
+20120804, New York,79.6
+20120805, New York,81.5
+20120806, New York,80
+20120807, New York,75.7
+20120808, New York,77.8
+20120809, New York,78.6
+20120810, New York,77.8
+20120811, New York,78.5
+20120812, New York,78.8
+20120813, New York,78.6
+20120814, New York,76.8
+20120815, New York,76.7
+20120816, New York,75.9
+20120817, New York,77.6
+20120818, New York,72.6
+20120819, New York,70.4
+20120820, New York,71.8
+20120821, New York,73.6
+20120822, New York,74.7
+20120823, New York,74.6
+20120824, New York,76
+20120825, New York,76.2
+20120826, New York,73.4
+20120827, New York,74.6
+20120828, New York,79.4
+20120829, New York,74.7
+20120830, New York,73.5
+20120831, New York,77.9
+20120901, New York,80.7
+20120902, New York,75.1
+20120903, New York,73.5
+20120904, New York,73.5
+20120905, New York,77.7
+20120906, New York,74.2
+20120907, New York,76
+20120908, New York,77.1
+20120909, New York,69.7
+20120910, New York,67.8
+20120911, New York,64
+20120912, New York,68.1
+20120913, New York,69.3
+20120914, New York,70
+20120915, New York,69.3
+20120916, New York,66.3
+20120917, New York,67
+20120918, New York,72.8
+20120919, New York,67.2
+20120920, New York,62.1
+20120921, New York,64
+20120922, New York,65.5
+20120923, New York,65.7
+20120924, New York,60.4
+20120925, New York,63.2
+20120926, New York,68.5
+20120927, New York,69.2
+20120928, New York,68.7
+20120929, New York,62.5
+20120930, New York,62.3
+20111001,San Francisco,62.7
+20111002,San Francisco,59.9
+20111003,San Francisco,59.1
+20111004,San Francisco,58.8
+20111005,San Francisco,58.7
+20111006,San Francisco,57
+20111007,San Francisco,56.7
+20111008,San Francisco,56.8
+20111009,San Francisco,56.7
+20111010,San Francisco,60.1
+20111011,San Francisco,61.1
+20111012,San Francisco,61.5
+20111013,San Francisco,64.3
+20111014,San Francisco,67.1
+20111015,San Francisco,64.6
+20111016,San Francisco,61.6
+20111017,San Francisco,61.1
+20111018,San Francisco,59.2
+20111019,San Francisco,58.9
+20111020,San Francisco,57.2
+20111021,San Francisco,56.4
+20111022,San Francisco,60.7
+20111023,San Francisco,65.1
+20111024,San Francisco,60.9
+20111025,San Francisco,56.1
+20111026,San Francisco,54.6
+20111027,San Francisco,56.1
+20111028,San Francisco,58.1
+20111029,San Francisco,57.5
+20111030,San Francisco,57.7
+20111031,San Francisco,55.1
+20111101,San Francisco,57.9
+20111102,San Francisco,64.6
+20111103,San Francisco,56.2
+20111104,San Francisco,50.5
+20111105,San Francisco,51.3
+20111106,San Francisco,52.6
+20111107,San Francisco,51.4
+20111108,San Francisco,50.6
+20111109,San Francisco,54.6
+20111110,San Francisco,55.6
+20111111,San Francisco,53.9
+20111112,San Francisco,54
+20111113,San Francisco,53.8
+20111114,San Francisco,53.5
+20111115,San Francisco,53.4
+20111116,San Francisco,52.2
+20111117,San Francisco,52.7
+20111118,San Francisco,53.1
+20111119,San Francisco,49
+20111120,San Francisco,50.4
+20111121,San Francisco,51.1
+20111122,San Francisco,52.3
+20111123,San Francisco,54.6
+20111124,San Francisco,55.1
+20111125,San Francisco,51.5
+20111126,San Francisco,53.6
+20111127,San Francisco,52.3
+20111128,San Francisco,51
+20111129,San Francisco,49.5
+20111130,San Francisco,49.8
+20111201,San Francisco,60.4
+20111202,San Francisco,62.2
+20111203,San Francisco,58.3
+20111204,San Francisco,52.7
+20111205,San Francisco,51.5
+20111206,San Francisco,49.9
+20111207,San Francisco,48.6
+20111208,San Francisco,46.4
+20111209,San Francisco,49.8
+20111210,San Francisco,52.1
+20111211,San Francisco,48.8
+20111212,San Francisco,47.4
+20111213,San Francisco,47.2
+20111214,San Francisco,46.1
+20111215,San Francisco,48.8
+20111216,San Francisco,47.9
+20111217,San Francisco,49.8
+20111218,San Francisco,49.1
+20111219,San Francisco,48.3
+20111220,San Francisco,49.3
+20111221,San Francisco,48.4
+20111222,San Francisco,53.3
+20111223,San Francisco,47.5
+20111224,San Francisco,47.9
+20111225,San Francisco,48.9
+20111226,San Francisco,45.9
+20111227,San Francisco,47.2
+20111228,San Francisco,48.9
+20111229,San Francisco,50.9
+20111230,San Francisco,52.9
+20111231,San Francisco,50.1
+20120101,San Francisco,53.9
+20120102,San Francisco,53.1
+20120103,San Francisco,49.7
+20120104,San Francisco,52.7
+20120105,San Francisco,52.6
+20120106,San Francisco,49
+20120107,San Francisco,51
+20120108,San Francisco,56.8
+20120109,San Francisco,52.3
+20120110,San Francisco,51.6
+20120111,San Francisco,49.8
+20120112,San Francisco,51.9
+20120113,San Francisco,53.7
+20120114,San Francisco,52.9
+20120115,San Francisco,49.7
+20120116,San Francisco,45.3
+20120117,San Francisco,43.6
+20120118,San Francisco,45
+20120119,San Francisco,47.3
+20120120,San Francisco,51.4
+20120121,San Francisco,53.7
+20120122,San Francisco,48.3
+20120123,San Francisco,52.9
+20120124,San Francisco,49.1
+20120125,San Francisco,52.1
+20120126,San Francisco,53.6
+20120127,San Francisco,50.4
+20120128,San Francisco,50.3
+20120129,San Francisco,53.8
+20120130,San Francisco,51.9
+20120131,San Francisco,50
+20120201,San Francisco,50
+20120202,San Francisco,51.3
+20120203,San Francisco,51.5
+20120204,San Francisco,52
+20120205,San Francisco,53.8
+20120206,San Francisco,54.6
+20120207,San Francisco,54.3
+20120208,San Francisco,51.9
+20120209,San Francisco,53.8
+20120210,San Francisco,53.9
+20120211,San Francisco,52.3
+20120212,San Francisco,50.1
+20120213,San Francisco,49.5
+20120214,San Francisco,48.6
+20120215,San Francisco,49.9
+20120216,San Francisco,52.4
+20120217,San Francisco,49.9
+20120218,San Francisco,51.6
+20120219,San Francisco,47.8
+20120220,San Francisco,48.7
+20120221,San Francisco,49.7
+20120222,San Francisco,53.4
+20120223,San Francisco,54.1
+20120224,San Francisco,55.9
+20120225,San Francisco,51.7
+20120226,San Francisco,47.7
+20120227,San Francisco,45.4
+20120228,San Francisco,47
+20120229,San Francisco,49.8
+20120301,San Francisco,48.9
+20120302,San Francisco,48.1
+20120303,San Francisco,50.7
+20120304,San Francisco,55
+20120305,San Francisco,48.8
+20120306,San Francisco,48.4
+20120307,San Francisco,49.9
+20120308,San Francisco,49.2
+20120309,San Francisco,51.7
+20120310,San Francisco,49.3
+20120311,San Francisco,50
+20120312,San Francisco,48.6
+20120313,San Francisco,53.9
+20120314,San Francisco,55.2
+20120315,San Francisco,55.9
+20120316,San Francisco,54.6
+20120317,San Francisco,48.2
+20120318,San Francisco,47.1
+20120319,San Francisco,45.8
+20120320,San Francisco,49.7
+20120321,San Francisco,51.4
+20120322,San Francisco,51.4
+20120323,San Francisco,48.4
+20120324,San Francisco,49
+20120325,San Francisco,46.4
+20120326,San Francisco,49.7
+20120327,San Francisco,54.1
+20120328,San Francisco,54.6
+20120329,San Francisco,52.3
+20120330,San Francisco,54.5
+20120331,San Francisco,56.2
+20120401,San Francisco,51.1
+20120402,San Francisco,50.5
+20120403,San Francisco,52.2
+20120404,San Francisco,50.6
+20120405,San Francisco,47.9
+20120406,San Francisco,47.4
+20120407,San Francisco,49.4
+20120408,San Francisco,50
+20120409,San Francisco,51.3
+20120410,San Francisco,53.8
+20120411,San Francisco,52.9
+20120412,San Francisco,53.9
+20120413,San Francisco,50.2
+20120414,San Francisco,50.9
+20120415,San Francisco,51.5
+20120416,San Francisco,51.9
+20120417,San Francisco,53.2
+20120418,San Francisco,53
+20120419,San Francisco,55.1
+20120420,San Francisco,55.8
+20120421,San Francisco,58
+20120422,San Francisco,52.8
+20120423,San Francisco,55.1
+20120424,San Francisco,57.9
+20120425,San Francisco,57.5
+20120426,San Francisco,55.3
+20120427,San Francisco,53.5
+20120428,San Francisco,54.7
+20120429,San Francisco,54
+20120430,San Francisco,53.4
+20120501,San Francisco,52.7
+20120502,San Francisco,50.7
+20120503,San Francisco,52.6
+20120504,San Francisco,53.4
+20120505,San Francisco,53.1
+20120506,San Francisco,56.5
+20120507,San Francisco,55.3
+20120508,San Francisco,52
+20120509,San Francisco,52.4
+20120510,San Francisco,53.4
+20120511,San Francisco,53.1
+20120512,San Francisco,49.9
+20120513,San Francisco,52
+20120514,San Francisco,56
+20120515,San Francisco,53
+20120516,San Francisco,51
+20120517,San Francisco,51.4
+20120518,San Francisco,52.2
+20120519,San Francisco,52.4
+20120520,San Francisco,54.5
+20120521,San Francisco,52.8
+20120522,San Francisco,53.9
+20120523,San Francisco,56.5
+20120524,San Francisco,54.7
+20120525,San Francisco,52.5
+20120526,San Francisco,52.1
+20120527,San Francisco,52.2
+20120528,San Francisco,52.9
+20120529,San Francisco,52.1
+20120530,San Francisco,52.1
+20120531,San Francisco,53.3
+20120601,San Francisco,54.8
+20120602,San Francisco,54
+20120603,San Francisco,52.3
+20120604,San Francisco,55.3
+20120605,San Francisco,53.5
+20120606,San Francisco,54.1
+20120607,San Francisco,53.9
+20120608,San Francisco,54.4
+20120609,San Francisco,55
+20120610,San Francisco,60
+20120611,San Francisco,57.2
+20120612,San Francisco,55.1
+20120613,San Francisco,53.3
+20120614,San Francisco,53.4
+20120615,San Francisco,54.6
+20120616,San Francisco,57
+20120617,San Francisco,55.6
+20120618,San Francisco,52.5
+20120619,San Francisco,53.9
+20120620,San Francisco,55.3
+20120621,San Francisco,53.3
+20120622,San Francisco,54.1
+20120623,San Francisco,55.2
+20120624,San Francisco,55.8
+20120625,San Francisco,56.8
+20120626,San Francisco,57.5
+20120627,San Francisco,57.7
+20120628,San Francisco,56.6
+20120629,San Francisco,56.4
+20120630,San Francisco,58.4
+20120701,San Francisco,58.8
+20120702,San Francisco,56.4
+20120703,San Francisco,56.5
+20120704,San Francisco,55.8
+20120705,San Francisco,54.8
+20120706,San Francisco,54.9
+20120707,San Francisco,54.7
+20120708,San Francisco,52.8
+20120709,San Francisco,53.7
+20120710,San Francisco,53.1
+20120711,San Francisco,52.7
+20120712,San Francisco,52
+20120713,San Francisco,53.4
+20120714,San Francisco,54
+20120715,San Francisco,54
+20120716,San Francisco,54.5
+20120717,San Francisco,56.7
+20120718,San Francisco,57.5
+20120719,San Francisco,57.1
+20120720,San Francisco,58.1
+20120721,San Francisco,57.6
+20120722,San Francisco,56
+20120723,San Francisco,56.6
+20120724,San Francisco,57.8
+20120725,San Francisco,57.5
+20120726,San Francisco,56.4
+20120727,San Francisco,55.3
+20120728,San Francisco,55
+20120729,San Francisco,55.6
+20120730,San Francisco,55.6
+20120731,San Francisco,55.9
+20120801,San Francisco,55.4
+20120802,San Francisco,54.4
+20120803,San Francisco,53.7
+20120804,San Francisco,54.1
+20120805,San Francisco,57.8
+20120806,San Francisco,58.2
+20120807,San Francisco,58
+20120808,San Francisco,57
+20120809,San Francisco,55
+20120810,San Francisco,54.8
+20120811,San Francisco,53
+20120812,San Francisco,52.5
+20120813,San Francisco,53.3
+20120814,San Francisco,53.9
+20120815,San Francisco,56.2
+20120816,San Francisco,57.1
+20120817,San Francisco,55.3
+20120818,San Francisco,56.2
+20120819,San Francisco,54.3
+20120820,San Francisco,53.1
+20120821,San Francisco,53.4
+20120822,San Francisco,54.5
+20120823,San Francisco,55.7
+20120824,San Francisco,54.8
+20120825,San Francisco,53.8
+20120826,San Francisco,56.5
+20120827,San Francisco,58.3
+20120828,San Francisco,58.7
+20120829,San Francisco,57.5
+20120830,San Francisco,55.9
+20120831,San Francisco,55.4
+20120901,San Francisco,55.7
+20120902,San Francisco,53.1
+20120903,San Francisco,53.5
+20120904,San Francisco,52.5
+20120905,San Francisco,54.5
+20120906,San Francisco,56.3
+20120907,San Francisco,56.4
+20120908,San Francisco,56.5
+20120909,San Francisco,56.4
+20120910,San Francisco,55.4
+20120911,San Francisco,56.2
+20120912,San Francisco,55.7
+20120913,San Francisco,54.3
+20120914,San Francisco,55.2
+20120915,San Francisco,54.3
+20120916,San Francisco,52.9
+20120917,San Francisco,54.8
+20120918,San Francisco,54.8
+20120919,San Francisco,56.8
+20120920,San Francisco,55.4
+20120921,San Francisco,55.8
+20120922,San Francisco,55.9
+20120923,San Francisco,52.8
+20120924,San Francisco,54.5
+20120925,San Francisco,53.3
+20120926,San Francisco,53.6
+20120927,San Francisco,52.1
+20120928,San Francisco,52.6
+20120929,San Francisco,53.9
+20120930,San Francisco,55.1
+20111001,Austin,72.2
+20111002,Austin,67.7
+20111003,Austin,69.4
+20111004,Austin,68
+20111005,Austin,72.4
+20111006,Austin,77
+20111007,Austin,82.3
+20111008,Austin,78.9
+20111009,Austin,68.8
+20111010,Austin,68.7
+20111011,Austin,70.3
+20111012,Austin,75.3
+20111013,Austin,76.6
+20111014,Austin,66.6
+20111015,Austin,68
+20111016,Austin,70.6
+20111017,Austin,71.1
+20111018,Austin,70
+20111019,Austin,61.6
+20111020,Austin,57.4
+20111021,Austin,64.3
+20111022,Austin,72.4
+20111023,Austin,72.4
+20111024,Austin,72.5
+20111025,Austin,72.7
+20111026,Austin,73.4
+20111027,Austin,70.7
+20111028,Austin,56.8
+20111029,Austin,51
+20111030,Austin,54.9
+20111031,Austin,58.8
+20111101,Austin,62.6
+20111102,Austin,71
+20111103,Austin,58.4
+20111104,Austin,45.1
+20111105,Austin,52.2
+20111106,Austin,73
+20111107,Austin,75.4
+20111108,Austin,72.1
+20111109,Austin,56.6
+20111110,Austin,55.4
+20111111,Austin,46.7
+20111112,Austin,62
+20111113,Austin,71.6
+20111114,Austin,75.5
+20111115,Austin,72.1
+20111116,Austin,65.7
+20111117,Austin,56.8
+20111118,Austin,49.9
+20111119,Austin,71.7
+20111120,Austin,77.7
+20111121,Austin,76.4
+20111122,Austin,68.8
+20111123,Austin,57
+20111124,Austin,55.5
+20111125,Austin,61.6
+20111126,Austin,64.1
+20111127,Austin,51.1
+20111128,Austin,43
+20111129,Austin,46.4
+20111130,Austin,48
+20111201,Austin,48.1
+20111202,Austin,60.6
+20111203,Austin,62.6
+20111204,Austin,57.1
+20111205,Austin,44.2
+20111206,Austin,37.4
+20111207,Austin,35
+20111208,Austin,37
+20111209,Austin,45.4
+20111210,Austin,50.7
+20111211,Austin,48.6
+20111212,Austin,52.2
+20111213,Austin,60.8
+20111214,Austin,70
+20111215,Austin,64.2
+20111216,Austin,50.9
+20111217,Austin,51.6
+20111218,Austin,55.2
+20111219,Austin,62.1
+20111220,Austin,56.3
+20111221,Austin,47.2
+20111222,Austin,52.3
+20111223,Austin,45.2
+20111224,Austin,43.6
+20111225,Austin,42.9
+20111226,Austin,48.2
+20111227,Austin,45.4
+20111228,Austin,44.2
+20111229,Austin,50.4
+20111230,Austin,52.4
+20111231,Austin,53.5
+20120101,Austin,55.9
+20120102,Austin,48.2
+20120103,Austin,41
+20120104,Austin,48.9
+20120105,Austin,54.8
+20120106,Austin,61.2
+20120107,Austin,59.7
+20120108,Austin,52.5
+20120109,Austin,54
+20120110,Austin,47.7
+20120111,Austin,49.2
+20120112,Austin,48.4
+20120113,Austin,40.2
+20120114,Austin,43.9
+20120115,Austin,45.2
+20120116,Austin,65
+20120117,Austin,68.2
+20120118,Austin,47.5
+20120119,Austin,57.1
+20120120,Austin,61.9
+20120121,Austin,54.6
+20120122,Austin,56.7
+20120123,Austin,54.4
+20120124,Austin,52.7
+20120125,Austin,61.8
+20120126,Austin,55
+20120127,Austin,50.7
+20120128,Austin,52.9
+20120129,Austin,44.4
+20120130,Austin,49.1
+20120131,Austin,62.8
+20120201,Austin,64.6
+20120202,Austin,61.1
+20120203,Austin,70
+20120204,Austin,61.3
+20120205,Austin,48.2
+20120206,Austin,44.2
+20120207,Austin,51.3
+20120208,Austin,49.2
+20120209,Austin,45.7
+20120210,Austin,54.1
+20120211,Austin,44.9
+20120212,Austin,36.5
+20120213,Austin,44.8
+20120214,Austin,52.3
+20120215,Austin,68
+20120216,Austin,54.6
+20120217,Austin,53.8
+20120218,Austin,56.2
+20120219,Austin,50.8
+20120220,Austin,53
+20120221,Austin,61
+20120222,Austin,68.8
+20120223,Austin,69.4
+20120224,Austin,59.3
+20120225,Austin,47.2
+20120226,Austin,47.7
+20120227,Austin,61.9
+20120228,Austin,67.2
+20120229,Austin,70.1
+20120301,Austin,62.1
+20120302,Austin,72.7
+20120303,Austin,59
+20120304,Austin,51.8
+20120305,Austin,55
+20120306,Austin,61.8
+20120307,Austin,67.1
+20120308,Austin,72
+20120309,Austin,46.4
+20120310,Austin,46.7
+20120311,Austin,56.9
+20120312,Austin,61.9
+20120313,Austin,68.8
+20120314,Austin,71.9
+20120315,Austin,72
+20120316,Austin,72.5
+20120317,Austin,71.7
+20120318,Austin,71.1
+20120319,Austin,73
+20120320,Austin,63.8
+20120321,Austin,60
+20120322,Austin,62.3
+20120323,Austin,61.1
+20120324,Austin,62
+20120325,Austin,64.6
+20120326,Austin,66
+20120327,Austin,65.8
+20120328,Austin,69.2
+20120329,Austin,69.5
+20120330,Austin,73.5
+20120331,Austin,73.9
+20120401,Austin,75.3
+20120402,Austin,75.4
+20120403,Austin,77.3
+20120404,Austin,67
+20120405,Austin,71.1
+20120406,Austin,70.4
+20120407,Austin,73.6
+20120408,Austin,71.1
+20120409,Austin,70
+20120410,Austin,69
+20120411,Austin,69.2
+20120412,Austin,74.5
+20120413,Austin,73.4
+20120414,Austin,76
+20120415,Austin,74.5
+20120416,Austin,63.6
+20120417,Austin,67.3
+20120418,Austin,65.1
+20120419,Austin,67.9
+20120420,Austin,68.9
+20120421,Austin,65.1
+20120422,Austin,65.4
+20120423,Austin,70.1
+20120424,Austin,67
+20120425,Austin,75.4
+20120426,Austin,77.5
+20120427,Austin,77
+20120428,Austin,77.7
+20120429,Austin,77.7
+20120430,Austin,77.7
+20120501,Austin,77
+20120502,Austin,77.9
+20120503,Austin,79.1
+20120504,Austin,80.1
+20120505,Austin,82.1
+20120506,Austin,79
+20120507,Austin,79.8
+20120508,Austin,70
+20120509,Austin,69.8
+20120510,Austin,71.3
+20120511,Austin,69.4
+20120512,Austin,72
+20120513,Austin,72.4
+20120514,Austin,72.5
+20120515,Austin,67.6
+20120516,Austin,69
+20120517,Austin,72.7
+20120518,Austin,73.7
+20120519,Austin,77.5
+20120520,Austin,75.8
+20120521,Austin,76.9
+20120522,Austin,78.8
+20120523,Austin,77.7
+20120524,Austin,80.6
+20120525,Austin,81.4
+20120526,Austin,82.3
+20120527,Austin,80.3
+20120528,Austin,80.3
+20120529,Austin,82.2
+20120530,Austin,81.9
+20120531,Austin,82.4
+20120601,Austin,77.9
+20120602,Austin,81.1
+20120603,Austin,82.2
+20120604,Austin,81.2
+20120605,Austin,83
+20120606,Austin,83.2
+20120607,Austin,82.1
+20120608,Austin,77.5
+20120609,Austin,77.9
+20120610,Austin,82.9
+20120611,Austin,86.8
+20120612,Austin,85.3
+20120613,Austin,76.9
+20120614,Austin,84.5
+20120615,Austin,84.4
+20120616,Austin,83.8
+20120617,Austin,82.5
+20120618,Austin,82.9
+20120619,Austin,82.5
+20120620,Austin,81.3
+20120621,Austin,80.8
+20120622,Austin,81.7
+20120623,Austin,83.9
+20120624,Austin,85.5
+20120625,Austin,87.2
+20120626,Austin,88
+20120627,Austin,89.6
+20120628,Austin,86.7
+20120629,Austin,85.3
+20120630,Austin,81.7
+20120701,Austin,78.5
+20120702,Austin,83.1
+20120703,Austin,83.1
+20120704,Austin,84.5
+20120705,Austin,84.6
+20120706,Austin,84.2
+20120707,Austin,86.7
+20120708,Austin,84.3
+20120709,Austin,83.7
+20120710,Austin,77.1
+20120711,Austin,77.4
+20120712,Austin,80.6
+20120713,Austin,81.4
+20120714,Austin,80.2
+20120715,Austin,81.8
+20120716,Austin,77.3
+20120717,Austin,80.8
+20120718,Austin,81.6
+20120719,Austin,80.9
+20120720,Austin,83.9
+20120721,Austin,85.6
+20120722,Austin,83.6
+20120723,Austin,84
+20120724,Austin,83
+20120725,Austin,84.8
+20120726,Austin,84.4
+20120727,Austin,84.3
+20120728,Austin,83.9
+20120729,Austin,85
+20120730,Austin,84.9
+20120731,Austin,86.3
+20120801,Austin,86.5
+20120802,Austin,85.8
+20120803,Austin,85.3
+20120804,Austin,86
+20120805,Austin,84.2
+20120806,Austin,81.9
+20120807,Austin,86.5
+20120808,Austin,86.1
+20120809,Austin,86.8
+20120810,Austin,88
+20120811,Austin,85.1
+20120812,Austin,87.4
+20120813,Austin,88
+20120814,Austin,88
+20120815,Austin,87.2
+20120816,Austin,86.1
+20120817,Austin,86.8
+20120818,Austin,84.9
+20120819,Austin,76.8
+20120820,Austin,80.6
+20120821,Austin,80
+20120822,Austin,78.2
+20120823,Austin,79.1
+20120824,Austin,81.9
+20120825,Austin,84.7
+20120826,Austin,83.5
+20120827,Austin,82.1
+20120828,Austin,84
+20120829,Austin,85.7
+20120830,Austin,87.2
+20120831,Austin,82.9
+20120901,Austin,84.8
+20120902,Austin,83.9
+20120903,Austin,85.5
+20120904,Austin,86.4
+20120905,Austin,85.8
+20120906,Austin,85.4
+20120907,Austin,85.3
+20120908,Austin,81.9
+20120909,Austin,74.8
+20120910,Austin,71.6
+20120911,Austin,75.9
+20120912,Austin,82.1
+20120913,Austin,80.5
+20120914,Austin,70
+20120915,Austin,71.2
+20120916,Austin,70.3
+20120917,Austin,72.1
+20120918,Austin,73.7
+20120919,Austin,72.7
+20120920,Austin,71.7
+20120921,Austin,72.9
+20120922,Austin,73.1
+20120923,Austin,75.6
+20120924,Austin,78.3
+20120925,Austin,78.3
+20120926,Austin,79.6
+20120927,Austin,76.4
+20120928,Austin,77.2
+20120929,Austin,75.2
+20120930,Austin,71.9

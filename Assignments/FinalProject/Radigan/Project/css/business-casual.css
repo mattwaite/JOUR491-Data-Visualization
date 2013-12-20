@@ -1,27 +1,110 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
+@import url(http://fonts.googleapis.com/css?family=Mate:400,400italic);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300);
+@import url(http://fonts.googleapis.com/css?family=Archivo+Narrow:400,700);
+
 body {
-  /*background: url("../images/bg.jpg") no-repeat center center fixed;*/
-  background-color: #dadada; 
+  background: url("../images/bg.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-weight: 400;
+
+
+
+.bigtext  {
+	font-family: "Roboto", sans-serif;	
+	font-weight: 200;
 }
 
-p {
-  font-size: 1.25em;
-  line-height: 1.6;
-  color: #000;
+.bigtextbold  {
+	font-family: "Roboto", sans-serif;	
+	font-weight: 800;
 }
+
+
+
+.showtop  {
+	background-color: #000;
+	border-radius: 15px 15px 0px 0px;
+	color: #fff;
+	padding: 5px 0px 5px 0px;
+}
+
+.showtop h4 {
+	font-family: "Roboto", sans-serif;	
+	font-weight: 100;
+}
+	
+.datatable  {
+	background-color: #d30000;
+	width: 35%;
+	margin: 0px 15px 20px 20px; 
+	float: right; 
+	display: inline;
+	padding: 12px;	
+	border-radius: 10px;
+}
+
+.datatabl {
+	background-color: #d30000;
+	padding: 12px;	
+	border-radius: 10px;
+}
+
+
+.sidetable  {
+	background-color: #fff;
+	border-radius: 10px;
+	
+}
+
+.sidetableb  {
+	background-color: #dadada;
+	border-radius: 10px;
+	
+}
+
+.sidetable1  {
+	background-color: #fff;
+	
+	
+}
+
+.smalltable td  {
+	font-size: .8em;	
+}
+
+.smallertable td  {
+	font-size: .6em;	
+}
+
+.smallertable h2  {
+	font-size: 1.3em;	
+}
+
+.jumbotron  {
+	background-color: rgba(0,0,0,.75);
+	color: #fff;
+	font-family: "Roboto Condensed", sans-serif;
+	
+}
+
+
 
 hr {
   border-color: #999999;
   max-width: 400px;
+}
+
+hr.faded  {
+	opacity: .35;	
+}
+
+hr.fullrule {
+	max-width: 1000px;	
 }
 
 .brand,
@@ -47,10 +130,42 @@ hr {
 }
 
 .brand-name {
-  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
   font-size: 1.5em;
   text-transform: capitalize;
   letter-spacing: normal;
+}
+
+.table-small  {
+	padding: 15px;
+	
+}
+
+.robotable table  {
+	background-color: rgba(211,0,0,.55);
+	color: #fff;		
+}
+
+.robotable .table-hover tbody tr:hover td, .robotable .table-hover tbody tr:hover th {
+  color: #000;
+  background-color: #dadada;
+}
+
+.vantable .table-hover tbody tr:hover td, .robotable .table-hover tbody tr:hover th {
+  color: #000;
+  background-color: #e8d2a1;
+}
+
+.vantable table  {
+	background-color: rgba(93,0,136,.55);
+	color: #fff;		
+}
+
+thead.end td {
+	font-size: 1em;
+	font-family: "Roboto Condensed", sans-serif;
+	font-weight: 700;	
 }
 
 .tagline-divider {
@@ -59,9 +174,22 @@ hr {
   max-width: 250px;
 }
 
+tr.black  {
+	color: #000;
+	
+}
+
+
 .box {
   background: #fff;
   background: rgba(255,255,255,0.9);
+  margin-bottom: 20px;
+  padding: 30px 15px;
+}
+
+.boxbold {
+  background: #fff;
+  background: rgba(255,255,255,1);
   margin-bottom: 20px;
   padding: 30px 15px;
 }
@@ -94,10 +222,140 @@ footer p {
   padding: 50px 0;
 }
 
+
+
+
+
+
+
+
+/* Fonts  */
+
+p {
+  font-size: 1.25em;
+  font-family: "Mate", serif;
+  line-height: 1.6;
+  color: #000;
+}
+
+h1, h4, h5, h6 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+
+h1  {
+	font-family: "Roboto", sans-serif; 
+	font-weight: 800;
+	
+}
+
+
+h2,  {
+	font-family: "Archivo Narrow", sans-serif;
+	font-weight: 700;
+  letter-spacing: 3px;
+  
+}
+
+h2.kelsey  {
+	font-family: "Roboto Condensed", sans-serif;
+	font-weight: 700;
+	color: #d30000;
+	font-size: 2.2em;	
+}
+
+h2.krista  {
+	font-family: "Roboto Condensed", sans-serif;
+	font-weight: 700;
+	color: #5d0088;
+	font-size: 2.2em;	
+}
+
+h3 {
+	font-family: "Archivo Narrow", sans-serif;
+	font-weight: 400;
+  	letter-spacing: 3px;
+  
+}
+
+p.bodygraph  {
+	text-indent: 20px;
+	padding-left: 15px;
+	
+}
+	
+p.datafoot  {
+	font-size: 1.0em;	
+	color: #dadada;
+	font-family: "Roboto", sans-serif;
+	font-weight: 200;
+}
+
+p.datafoot2  {
+	font-size: .85em;	
+	color: #000;
+}
+
+p.caption {
+	font-size: 1.2em;
+	color: #000;
+}
+
+p.jumb {
+	color: #fff;
+	font-size: 1em;	
+}
+
+p.showdown  {
+	font-size: .95em;
+	text-indent: 20px;	
+}
+
+p.footshow  {
+	font-style: italic;
+	font-size: .7em;	
+}
+
+p.bodyindent, h3.bodyindent  {
+	text-indent: 35px;	
+}
+
+p.pagelink  {
+	font-size: 1.75em;
+	color: #d30000;
+	font-weight: 700;
+}
+
+p.byline  {
+	font-family: "Roboto", sans-serif;
+	font-size: 2em;
+	font-weight: 200;	
+}
+
+p.byline2  {
+	font-family: "Roboto", sans-serif;
+	font-size: 1.75em;
+	font-weight: 200;	
+}
+
+p.robograph  {
+	color: #003AA8;	
+}
+
+p.teamgraph  {
+	color: #d30000;	
+}
+
+
+
+/* Full-width top bar */
+
 @media screen and (min-width: 768px) {
 
 .brand {
   display: inherit;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 5em;
   line-height: normal;
@@ -125,7 +383,8 @@ footer p {
   font-size: 1.25em;
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
   color: #fff;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
@@ -154,6 +413,7 @@ footer p {
 
 .navbar-nav>li>a {
   line-height: normal;
+  color: #fff;
 }
 
 .navbar-nav {
@@ -161,7 +421,10 @@ footer p {
   margin: 0 auto;
   display: table;
   table-layout: fixed;
-  font-size: 1 em;
+  font-size: 1.4em;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 100;
+  color: #fff;
 }
 
 }

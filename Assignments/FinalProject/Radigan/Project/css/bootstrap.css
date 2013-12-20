@@ -1424,7 +1424,8 @@ th {
 .table-condensed > thead > tr > td,
 .table-condensed > tbody > tr > td,
 .table-condensed > tfoot > tr > td {
-  padding: 5px;
+  padding: 15px;
+  margin: 10px;
 }
 .table-bordered {
   border: 1px solid #dddddd;

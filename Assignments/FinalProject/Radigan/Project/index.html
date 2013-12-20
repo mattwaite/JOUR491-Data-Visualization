@@ -5,8 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@CornFedSports">
+    <meta name="twitter:creator" content="@cornfedBOSSman">
+    <meta name="twitter:title" content="The Robo Effect">
+    <meta name="twitter:description" content="A one-of-a-kind statistical analysis looking at why Husker Kelsey Robinson should be taking home National Player of the Year honors later today.">
+    <meta name="twitter:image:src" content="http://www.cornfedsports.com/features/RoboEffect/images/robocard.jpg">
+    
 
-    <title>Robo Knows</title>
+    <title>Robo Effect: Home</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -14,65 +21,18 @@
     <!-- Add custom CSS here -->
     <link href="css/business-casual.css" rel="stylesheet">
     
-    <script src="http://mbostock.github.com/d3/d3.v2.js"></script>
-		<style>
-			/* tell the SVG path to be a thin blue line without any area fill */
-			path {
-				stroke-width: 1;
-				fill: none;
-			}
-			
-			.data1 {
-				stroke: steelblue;
-			}
-
-			.data2 {
-				stroke: orange;
-			}
-
-			.axis {
-			  shape-rendering: crispEdges;
-			}
-
-			.x.axis line {
-			  stroke: lightgrey;
-			}
-
-			.x.axis .minor {
-			  stroke-opacity: .5;
-			}
-
-			.x.axis path {
-			  display: none;
-			}
-			
-			.x.axis text {
-				font-size: 14;
-			}
-
-			.y.axis line, .y.axis path {
-			  fill: none;
-			  stroke: #000;
-			}
-
-			.y.axis text {
-				font-size: 14;
-			}
-
-			.y.axisRight text {
-				fill: orange;
-			}
-			
-			.y.axisLeft text {
-				fill: steelblue;
-			}
-			</style>
+    
   </head>
 
   <body>
+ 
+<!-- Header -->
   
-    <div class="brand">Robo Knows</div>
+    <div class="brand">The Robo Effect</div>
     <div class="address-bar">A By the Numbers Look at a Player 'Unmeasurable' on the Stat Sheet Alone</div>
+
+
+<!--Navigation-->
 
     <nav class="navbar navbar-default" role="navigation">
       <div class="container">
@@ -83,184 +43,76 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">Business Casual</a>
+          <a class="navbar-brand" href="index.html">The Robo Effect</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav">
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="numbers.html">Numbers</a></li>
+            <li><a href="crunch.html">Crunch Time</a></li>
+            <li><a href="showdown.html">The Showdown</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container -->
     </nav>
 
-    <div class="container">
+<div class="container">
 
       <div class="row">
-        <div class="box">
-          <div class="col-lg-12 text-center">
-            <div id="carousel-example-generic" class="carousel slide">
-              <!-- Indicators -->
-              <ol class="carousel-indicators hidden-xs">
-                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-              </ol>
-            
-              <!-- Wrapper for slides -->
-              <div class="carousel-inner">
-                <div class="item active">
-                  <img class="img-responsive img-full" src="img/slide-1.jpg" >
-                </div>
-                <div class="item">
-                  <img class="img-responsive img-full" src="img/slide-2.jpg" >
-                </div>
-                <div class="item">
-                  <img class="img-responsive img-full" src="img/slide-3.jpg" >
-                </div>
-              </div>
-            
-              <!-- Controls -->
-              <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                <span class="icon-prev"></span>
-              </a>
-              <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                <span class="icon-next"></span>
-              </a>
-            </div>
-            <h1><span class="brand-name">The Robo Effect</span><br><small>Not Your Grandmother's Volleyball Breakdown</small><hr class="tagline-divider"><small>By <strong>Pat Radigan</strong></small></h1>
-          </div>
-        </div>
-      </div>
+      <div class="box text-center">
       
       <div class="row">
-        <div class="box">
-          <div class="col-lg-12">
-            <hr>
-            <h2 class="intro-text text-center">This is where my main points will sit</strong></h2>
-            <hr>
+      
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+          
+       		</div>   
             
-            <hr class="visible-xs">
-            
-          </div>
-        </div>
       </div>
-
-      <div class="row">
-        <div class="box">
-          <div class="col-lg-12">
-            <hr>
-            <h2 class="intro-text text-center">And here<strong>there will be graphs</strong></h2>
-            <hr>
-            
-            <p><big>Kelsey Robinson vs. Team Success (in sets +/-)</big></p>
-            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-            
-          <div id="graph" class="aGraph col-md-8 col-md-offset-1" style="position:absolute;top:80px;left:0; float:left;"></div>
-
-
-	<script>
-		/* implementation heavily influenced by http://bl.ocks.org/1166403 */
-		/* some arguments AGAINST the use of dual-scaled axes line graphs can be found at http://www.perceptualedge.com/articles/visual_business_intelligence/dual-scaled_axes.pdf */
-		
-		// define dimensions of graph
-		var m = [80, 80, 80, 80]; // margins
-		var w = 900 - m[1] - m[3];	// width
-		var h = 400 - m[0] - m[2]; // height
-		
-		// create a simple data array that we'll plot with a line (this array represents only the Y values, X will just be the index location)
-		var data1 = [4.48, 3.48, 2.48, 1.90, 2.68, 2.53, 3.68, 4.68, 4.03, 5.42, 4.61, 6.07, 5.24, 4.81, 4.40, 3.01, 3.23, 3.78, 4.55, 6.01, 4.09, 5.81, 3.21, 5.14, 6.98, 1.62, 5.86, 5.47, 2.68];
-		var data2 = [3,	 -2, 3,	2, 3, 2, 3, 3, -1,	2, 3, 3, 1, 1, -2,	3, -2,	3, 2, 3, 1, 2, 1, 3, 2, -3, 3, 3, -2];
-
-		// X scale will fit all values from data[] within pixels 0-w
-		var x = d3.scale.linear().domain([0, data1.length]).range([0, w]);
-		// Y scale will fit values from 0-10 within pixels h-0 (Note the inverted domain for the y-scale: bigger is up!)
-		var y1 = d3.scale.linear().domain([0, 10]).range([h, 0]); // in real world the domain would be dynamically calculated from the data
-		var y2 = d3.scale.linear().domain([0, 700]).range([h, 0]);  // in real world the domain would be dynamically calculated from the data
-			// automatically determining max range can work something like this
-			// var y = d3.scale.linear().domain([0, d3.max(data)]).range([h, 0]);
-
-		// create a line function that can convert data[] into x and y points
-		var line1 = d3.svg.line()
-			// assign the X function to plot our line as we wish
-			.x(function(d,i) { 
-				// verbose logging to show what's actually being done
-				console.log('Plotting X1 value for data point: ' + d + ' using index: ' + i + ' to be at: ' + x(i) + ' using our xScale.');
-				// return the X coordinate where we want to plot this datapoint
-				return x(i); 
-			})
-			.y(function(d) { 
-				// verbose logging to show what's actually being done
-				console.log('Plotting Y1 value for data point: ' + d + ' to be at: ' + y1(d) + " using our y1Scale.");
-				// return the Y coordinate where we want to plot this datapoint
-				return y1(d); 
-			})
-			
-		// create a line function that can convert data[] into x and y points
-		var line2 = d3.svg.line()
-			// assign the X function to plot our line as we wish
-			.x(function(d,i) { 
-				// verbose logging to show what's actually being done
-				console.log('Plotting X2 value for data point: ' + d + ' using index: ' + i + ' to be at: ' + x(i) + ' using our xScale.');
-				// return the X coordinate where we want to plot this datapoint
-				return x(i); 
-			})
-			.y(function(d) { 
-				// verbose logging to show what's actually being done
-				console.log('Plotting Y2 value for data point: ' + d + ' to be at: ' + y2(d) + " using our y2Scale.");
-				// return the Y coordinate where we want to plot this datapoint
-				return y2(d); 
-			})
-
-
-			// Add an SVG element with the desired dimensions and margin.
-			var graph = d3.select("#graph").append("svg:svg")
-			      .attr("width", w + m[1] + m[3])
-			      .attr("height", h + m[0] + m[2])
-			    .append("svg:g")
-			      .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
-
-			// create yAxis
-		    var xAxis = d3.svg.axis().scale(x).tickSize(-h).tickSubdivide(true);
-			// Add the x-axis.
-			graph.append("svg:g")
-			      .attr("class", "x axis")
-			      .attr("transform", "translate(0," + h + ")")
-			      .call(xAxis);
-
-
-			// create left yAxis
-			var yAxisLeft = d3.svg.axis().scale(y1).ticks(4).orient("left");
-			// Add the y-axis to the left
-			graph.append("svg:g")
-			      .attr("class", "y axis axisLeft")
-			      .attr("transform", "translate(-15,0)")
-			      .call(yAxisLeft);
-
-	  		// create right yAxis
-	  		var yAxisRight = d3.svg.axis().scale(y2).ticks(6).orient("right");
-  			// Add the y-axis to the right
-  			graph.append("svg:g")
-  			      .attr("class", "y axis axisRight")
-  			      .attr("transform", "translate(" + (w+15) + ",0)")
-  			      .call(yAxisRight);
-			
-			// add lines
-			// do this AFTER the axes above so that the line is above the tick-lines
-  			graph.append("svg:path").attr("d", line1(data1)).attr("class", "data1");
-  			graph.append("svg:path").attr("d", line2(data2)).attr("class", "data2");
-			
-
-	</script>
-				</div>
-			</div>
+        
+        <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+        <img src="images/robomain.jpg" width="100%" alt="Robinson Main" /> 
         </div>
+        </div>
+        
+        <div class="row">
+        
+        	<div class="col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1"> 
+              
+            <h1><span class="brand-name">The Robo Effect</span></h1>
+            <p class="byline">Not Your Grandmother's Volleyball Breakdown</p>
+            <hr class="tagline-divider"><p class="byline2">By <strong>Pat Radigan</strong></p>
+          </div>
+          
+        </div>
+        
+        <div class="row"><div class="col-md-10 col-md-offset-1"><hr class="fullrule"/></div></div>
+        
+        <div class="row">
+        	<div class="col-md-8 col-md-offset-2 text-left">
+            	<p>In her one-year Husker career, Kelsey Robinson lived up to the hype, delivering Nebraska's first Big Ten Player of the year in addition to helping the Huskers exceed expectations in what some considered a 'rebuilding year'. With the National Player of the Year award set to be announced today, the time has come for us to try and put Robinson's year into perspective, but as Husker coach John Cook is quick to point out, that is no easy task.
+            
+            	<p>"There's just so many ways you can evaluate her. You need to read the book 'Moneyball', she's the Moneyball player," he said. "There are things that statistically show up and there are outside of the box things that show up in other ways."</p>
+                <br/>
+                <p><small>Well coach, we may not have a Brad Pitt-type character hanging out around the office, but what we did come up with was a way to develop our own theory on what truly makes a player successful. After kicking around the best ways to completely account for a hitter's worth, we eventually developed the "Hitter Performance Rating" to try and put all of Robinson's contributions into one stat, and compare her numbers to the rest of the country: </small></p>
+            
+        		<p class="text-center"><big><span class="bigtext">[Kills - Attack Errors + Service Aces - Service Errors - Return Errors + <br/>(Digs * Team Hit %) + Solo Blocks + (Block Assists/2) - Block Errors] / Sets = </span><span class="bigtextbold">HPR</span></big></p><br/>
+            
+           
+           <p><small>Once we started plugging in numbers, we realized there was something to this new formula, especially when you put them in context. Rather than try and tell you, though, we'd like to show you...</small></p>
+           <div class="col-md-10 col-md-offset-1"><a href="numbers.html"><p class="pagelink"><span class="glyphicon glyphicon-arrow-right"></span>  NEXT: Putting the Data to the Test</p></a></div>
+            
+        	</div>
+        </div>
+      
+      </div>
+      </div>
+      
+</div> <!-- Container -->
   
-  
+  <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
   </body>
 </html>
