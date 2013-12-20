@@ -1,38 +1,284 @@
-#Your stuff goes here.
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Objects in space</title>
-        <link rel=”stylesheet” href=”css/bootstrap.css”  type=”text/css”/>
-    </head>
-    <body>
-        <div class="”container”">
-            <h1><a href="”#”">THINGS ARE FALLING FROM SPACE</a></h1>
+<html lang="en">
+<head>
+<title>Objects in space</title>
+<meta charset="utf-8">
+<link rel="icon" href="images/favicon.ico">
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/slider.css">
+<script src="js/jquery.js"></script>
+<script src="js/jquery-migrate-1.1.1.js"></script>
+<script src="js/superfish.js"></script>
+<script src="js/jquery.carouFredSel-6.1.0-packed.js"></script>
+<script src="js/jquery.equalheights.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/tms-0.4.1.js"></script>
+<script src="js/jquery.ui.totop.js"></script>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://d3js.org/d3.geo.tile.v0.min.js"></script>
+<script>
+
+var width = Math.max(960, window.innerWidth),
+    height = Math.max(500, window.innerHeight),
+    prefix = prefixMatch(["webkit", "ms", "Moz", "O"]);
+
+var tile = d3.geo.tile()
+    .size([width, height]);
+
+var projection = d3.geo.mercator();
+
+var zoom = d3.behavior.zoom()
+    .scale(1 << 12)
+    .scaleExtent([1 << 9, 1 << 23])
+    .translate([width / 2, height / 2])
+    .on("zoom", zoomed);
+
+var map = d3.select("body").append("div")
+    .attr("class", "map")
+    .style("width", width + "px")
+    .style("height", height + "px")
+    .call(zoom)
+    .on("mousemove", mousemoved);
+
+var layer = map.append("div")
+    .attr("class", "layer");
+
+var info = map.append("div")
+    .attr("class", "info");
+
+zoomed();
+
+function zoomed() {
+  var tiles = tile
+      .scale(zoom.scale())
+      .translate(zoom.translate())
+      ();
+
+  projection
+      .scale(zoom.scale() / 2 / Math.PI)
+      .translate(zoom.translate());
+
+  var image = layer
+      .style(prefix + "transform", matrix3d(tiles.scale, tiles.translate))
+    .selectAll(".tile")
+      .data(tiles, function(d) { return d; });
+
+  image.exit()
+      .remove();
+
+  image.enter().append("img")
+      .attr("class", "tile")
+      .attr("src", function(d) { return "http://" + ["a", "b", "c", "d"][Math.random() * 4 | 0] + ".tiles.mapbox.com/v3/examples.map-vyofok3q/" + d[2] + "/" + d[0] + "/" + d[1] + ".png"; })
+      .style("left", function(d) { return (d[0] << 8) + "px"; })
+      .style("top", function(d) { return (d[1] << 8) + "px"; });
+}
+
+function mousemoved() {
+  info.text(formatLocation(projection.invert(d3.mouse(this)), zoom.scale()));
+}
+
+function matrix3d(scale, translate) {
+  var k = scale / 256, r = scale % 1 ? Number : Math.round;
+  return "matrix3d(" + [k, 0, 0, 0, 0, k, 0, 0, 0, 0, k, 0, r(translate[0] * scale), r(translate[1] * scale), 0, 1 ] + ")";
+}
+
+function prefixMatch(p) {
+  var i = -1, n = p.length, s = document.body.style;
+  while (++i < n) if (p[i] + "Transform" in s) return "-" + p[i].toLowerCase() + "-";
+  return "";
+}
+
+function formatLocation(p, k) {
+  var format = d3.format("." + Math.floor(Math.log(k) / 2 - 2) + "f");
+  return (p[1] < 0 ? format(-p[1]) + "°S" : format(p[1]) + "°N") + " "
+       + (p[0] < 0 ? format(-p[0]) + "°W" : format(p[0]) + "°E");
+}
+
+</script>
+    <script type="text/javascript" src="http://mbostock.github.com/d3/d3.js?2.6.0"></script>
+    <script type="text/javascript" src="http://mbostock.github.com/d3/d3.csv.js?2.6.0"></script>
+    <style type="text/css">
+
+
+.bar rect {
+  fill: steelblue;
+}
+
+.bar text.value {
+  fill: white;
+}
+
+.axis {
+  shape-rendering: crispEdges;
+}
+
+.axis path {
+  fill: none;
+}
+
+.x.axis line {
+  stroke: #fff;
+  stroke-opacity: .8;
+}
+
+.y.axis path {
+  stroke: white;
+}
+.y.axis {
+    fill: white;
+}
+
+    </style>
+<script>
+$(window).load(function () {
+    $('.slider')._TMS({
+        show: 0,
+        pauseOnHover: false,
+        prevBu: '.prev',
+        nextBu: '.next',
+        playBu: false,
+        duration: 800,
+        preset: 'fade',
+        pagination: true, //'.pagination',true,'<ul></ul>'
+        pagNums: false,
+        slideshow: 8000,
+        numStatus: false,
+        banners: true,
+        waitBannerAnimation: false,
+        progressBar: false
+    })
+});
+$(window).load(function () {
+    $('.carousel1').carouFredSel({
+        auto: false,
+        prev: '.prev',
+        next: '.next',
+        width: 960,
+        items: {
+            visible: {
+                min: 3,
+                max: 3
+            },
+            height: 'auto',
+            width: 300,
+        },
+        responsive: true,
+        scroll: 1,
+        mousewheel: false,
+        swipe: {
+            onMouse: true,
+            onTouch: true
+        }
+    });
+});
+jQuery(document).ready(function () {
+    $().UItoTop({
+        easingType: 'easeOutQuart'
+    });
+});
+</script>
+
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<link rel="stylesheet" media="screen" href="css/ie.css">
+<![endif]-->
+</head>
+<body class="page1">
+<header>
+    <a href="index.html"><img src="images/logo.png" alt=""></a>
+        <h1>Objects in space</h1>
+  <div class="container_12">
+
+    <div class="grid_12"></div>
+
+      
+  </div>
+</header>
+<div class="top_block">
+  <div class="slider-relative">
+    <div class="slider-block">
+      <div class="slider">
+        <div class="map">
+        <iframe width="1100" height="550" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?q=select+col1+from+13q0vywprAHzrEfDjY8yWZmzwB3Hhj0abkQ6B2Rs&amp;viz=MAP&amp;h=false&amp;lat=35.96533910907875&amp;lng=-38.45772875976559&amp;t=1&amp;z=3&amp;l=col1&amp;y=2&amp;tmplt=2&amp;hml=GEOCODABLE"></iframe>
         </div>
-        <div class="navbar">
-	          <div class="navbar-inner">
-	            <div class="container">
-	              <ul class="nav">
-	                <li class="active"><a href="#">Home</a></li>
-	                <li><a href="#">Map Switch</a></li>
-	                <li><a href="#">About</a></li>
-	                <li><a href="#">Meet the author</a></li>
-	              </ul>
-	            </div>
-	          </div>
-	        </div>
-        <div class="hero-unit">
-        <h1>Map will likely go here. Placeholding.</h1>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="page1_block">
+  <div class="container_12">
+    <div class="grid_6">
+      <h2>Asteroid strikes are more likely than you winning the lottery.</h2>
+      <div class="clear"></div>
+      <br>Really.  There's a huge one due to pass by Earth in 2048.  It has a 1/1820 chance to hit.  It is called VK184.  That is significantly greater than your odds of winning a lottery, or even catching a shiny pokemon. NASA is tracking every large object that may fall and destroy things. Above is a simple map projection.
+      <br>
+      <a href="#" class="btn">More</a> </div>
+    <h2>This is not actually very alarming.</h2>
+    <br>This shows VK184 against the recent meteor in Russia.  I could not adaquetely show why this is not alarming.  The La Garita Caldera had a load of 240,000 megatons. That equals ONE THOUSAND SIX HUNDRED FORTY FOUR VK184s.  The impact that wiped out the dinosaurs was worth roughly 400 calderas.  If I graphed either of these compared to what VK184 looks like below, you would need a monitor spanning a few miles across to view this.  Perspective, people.</br>
 
-        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        </div>
-        <h3>Story placeholder</h3>
+  </div>
+</div>
+<div id="barchart">
+<script type="text/javascript">
 
-        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+var m = [30, 10, 10, 120],
+    w = 960 - m[1] - m[3],
+    h = 430 - m[0] - m[2];
 
-        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-        <script src=”js/bootstrap.js”></script>   
-    </body>
+var format = d3.format(",.0f");
+
+var x = d3.scale.linear().range([0, w]),
+    y = d3.scale.ordinal().rangeRoundBands([0, h], .1);
+
+var xAxis = d3.svg.axis().scale(x).orient("top").tickSize(-h),
+    yAxis = d3.svg.axis().scale(y).orient("left").tickSize(0);
+
+var svg = d3.select("#barchart").append("svg")
+    .attr("width", w + m[1] + m[3])
+    .attr("height", h + m[0] + m[2])
+  .append("g")
+    .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
+
+d3.csv("sample-data.csv", function(data) {
+
+  // Parse numbers, and sort by value.
+  data.forEach(function(d) { d.value = +d.value; });
+  data.sort(function(a, b) { return b.value - a.value; });
+
+  // Set the scale domain.
+  x.domain([0, d3.max(data, function(d) { return d.value; })]);
+  y.domain(data.map(function(d) { return d.name; }));
+
+  var bar = svg.selectAll("g.bar")
+      .data(data)
+    .enter().append("g")
+      .attr("class", "bar")
+      .attr("transform", function(d) { return "translate(0," + y(d.name) + ")"; });
+
+  bar.append("rect")
+      .attr("width", function(d) { return x(d.value); })
+      .attr("height", y.rangeBand());
+
+  bar.append("text")
+      .attr("class", "value")
+      .attr("x", function(d) { return x(d.value); })
+      .attr("y", y.rangeBand() / 2)
+      .attr("dx", -3)
+      .attr("dy", ".35em")
+      .attr("text-anchor", "end")
+      .text(function(d) { return d.text; });
+
+  svg.append("g")
+      .attr("class", "x axis")
+      .call(xAxis);
+
+  svg.append("g")
+      .attr("class", "y axis")
+      .call(yAxis);
+});
+
+    </script>
+</div>
+</body>
 </html>

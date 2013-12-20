@@ -1,0 +1,95 @@
+
+
+/*Slider*/
+.slider-relative {
+	position:relative;
+	overflow: hidden;
+	margin: 0 auto;
+	border-bottom: 1px solid #dadada;
+	background: url(../images/sl_shadow.png) bottom center no-repeat #000000;
+}
+
+
+.items {
+	display: none;	
+	overflow: hidden;
+}
+
+.slider-block {
+	position:relative;
+	height: 583px;
+	margin: 0 auto;
+	margin-bottom: 63px;
+	background: url(../images/starfieldbg.jpg)
+}
+.slider {
+	z-index:2;
+	overflow: visible !important;
+	height: 583px;
+	position: absolute;
+	left: 50%;
+	margin-left: -616.5px;
+	width: 1233px;
+}
+
+
+.slider .banner{
+	top: -1px;
+	left: 932px;
+	bottom: 0;
+	padding-left: 42px;
+	padding-right: 56px;
+	position: absolute;
+	font: normal 30px/36px Arial, Helvetica, sans-serif;
+	color: #fff;	
+	padding-top: 193px;
+	width: 203px;
+	background: #333131;
+}
+
+.slider .banner span {
+	color: #f98d0d;
+}
+
+.slider .banner i {
+	font-style: normal;
+	color: #c9e54e;
+}
+
+.slider .banner p {
+	padding-top: 23px;
+	font-size: 24px;
+	color: #bdbdbd;
+}
+
+
+.pagination {
+bottom: -50px;
+position: absolute;
+left: 50%;
+margin-left: -53px;
+z-index: 999;
+}
+
+.pagination li {
+	float: left;
+}
+
+.pagination li+li {
+	margin-left: 7px;
+}
+
+
+.pagination  li a{
+	width: 21px;
+	display: block;
+		transition: 0s ease;
+	-o-transition: 0s ease;
+	-webkit-transition: 0s ease;
+	height: 21px;
+	background: url(../images/pagination.png) right 0 no-repeat;
+}
+
+.pagination li a:hover, .pagination li.current a {
+	background-position: 0 0;
+}
