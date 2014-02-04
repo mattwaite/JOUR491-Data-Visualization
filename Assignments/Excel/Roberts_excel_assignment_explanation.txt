@@ -1,9 +1,0 @@
-revisions:
-
-I added a title, an X-axis label for Unemployment rate, a background texture, renamed the columns of data, and changed the frequency of the dates on the Y-axis to every 6 months.
-
-What i did, why, and what chart says:
-
-Every Chart needs a title.  I labeled the rate axis for clarity.  I moved the key to the empty portion of the chart to save space, and the texture was just to make it slightly less ugly.
-
-This chart says college graduates are less likely to be unemployed, and those with only a high school education or less are more likely to be unemployed, than the general population.
