@@ -102,13 +102,13 @@ This is __very tentative__ and __will change__.
 
 **In class:** Introduction to Tableau
 
-**Assignment:** Assignment TBA
+**Assignment:** Experiment with Tableau, start preparing a pitch for your first visual story. 
 
 ###March 12, 2015: Tableau 2
 
-**In class:**  More hands on with Tableau
+**In class:**  More hands on with Tableau: Creating dashboards for embedding.
 
-**Assignment:** Assignment TBA.
+**Assignment:** HTML work as assigned.
 
 ###March 17, 2015: Tableau 3
 
