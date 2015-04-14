@@ -139,60 +139,40 @@ This is __very tentative__ and __will change__.
 
 **Assignment:** Assignment TBA. 
 
-###April 7, 2015: Maps 3
-
-**In class:**  Introduction to using remotely sensed images in maps and data visualizations.
-
-**Assignment:** Assignment TBA.
-
-###April 9, 2015: Remote Sensing 1
+###April 7, 2015: Remote Sensing 1
 
 **In class:**  We're going to remotely sense our own data using balloons or kites. We're going to go out to a site, photograph it from the air and process the images. We'll start down that road today.
 
 **Assignment:** Assignment TBA.
 
-###April 14, 2015: Remote Sensing 2
+###April 9, 2015: No class. 
 
-**In class:**  We're going to mission plan.
-
-**Assignment:** Assignment TBA.
-
-###April 16, 2015: Remote Sensing 3
-
-**In class:** Field work?
-
-**Assignment:** Assignment TBA. Potentially processing images.
-
-###April 21, 2015: Remote sensing 4
-
-**In class:**  Documentation of the process, processing of images.
-
-**Assignment:** We're going to collaboratively write a document on how journalists can use balloon/kite mapping for news. Details TBA.
-
-###April 23, 2015: Your final assignment
+###April 14, 2015: Your final assignment
 
 **In class:**  You will have to report, analyze, visualize and publish a visual story of your own making. We'll discuss. You'll pitch your ideas.
 
 **Assignment:** Develop a final story project idea.
 
-###April 28, 2015: Pitches, project work time
+###April 16, 2015: Pitches, project work time
 
 **In class:**  Pitch your idea in class. Then we'll work on final projects in class.
 
 **Assignment:** Work on final project
 
-###April 30, 2015: Project work time
+###April 21, 2015: No class
 
-**In class:**  In class time to work on final projects
-
-**Assignment:** Work on final projects
-
-###May 5, 2015: Project work time
+###April 23, 2015: Project work time
 
 **In class:**  In class time to work on final projects.
 
-**Assignment:** Work on final project. Due Thursday.
+**Assignment:** Work on final project.
 
-###May 7, 2015:
+###April 28, 2015: Project work time
+
+**In class:**  In class time to work on final projects.
+
+**Assignment:** Work on final project.
+
+###April 30, 2015: Final project presentations
 
 **In class:**  Final presentations. Class ends.
