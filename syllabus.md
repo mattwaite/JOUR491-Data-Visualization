@@ -1,7 +1,7 @@
-#JOUR 491 Data Visualization#
-__Fall 2015__  
-__T-Th 3:30 - 4:45 a.m.__  
-__ANDN 114__  
+#JOUR 407 Data Visualization#
+__Fall 2016__  
+__T-Th 2:00 - 3:15 p.m.__  
+__ANDN 309__  
 
 Instructor: Matt Waite  
 Email: mwaite3@unl.edu  
@@ -17,12 +17,17 @@ Office: 244 Andersen  __Course description:__Welcome to data visualization, 
 * The Functional Art: An introduction to information graphics and visualization by Alberto Cairo
 __Other requirements:__
 
-* A copy of Microsoft Excel ($20 at the campus computer store)
+* Administrative privileges on a computer so you can install software
 * A GitHub account (free)
 * GitHub installed on your laptop (I can help you out with this)
 * A Google account (free)
 * A code editor (I can point you to free ones)
-* A sense of humor (Can't help you here)__Class opportunities:__The opportunities in this class are to experiment with storytelling in a way you have never done before. Creativity and ambition will be rewarded. Copy and pasting will not.
+* A sense of humor (Can't help you here)
+
+__News Nerd Slack:__
+
+I use [Slack](https://slack.com/) as a way for students to get help from each other and me when we're not in class or not even in the building. I have one News Nerd Slack that includes my current code class, students of past classes and alumni who have gone on to do data journalism professionally. You'll be added to the slack during the semester, and at the end, I'll remove you unless you tell me otherwise. If you like it, stay. If not, no worries and no judgements.
+__Class opportunities:__The opportunities in this class are to experiment with storytelling in a way you have never done before. Creativity and ambition will be rewarded. Copy and pasting will not.
 As such, this class will require to you try a lot of things on your own. If you've never done this before, it can be a little daunting starting out. To help you, I've set up a time called [Maker Hours](http://www.makerhours.org) where you can come, hang out, learn something new and get help with it. The information is in the link, but the short version is: Most Friday afternoons, room 27, Andersen Hall. This time is open to any student wanting to learn programming, data viz, hardware hacking -- anything in the digital journalism space that can help them tell stories on the web. It's not required for you to show up at Maker Hours, but if you're struggling, stuck, frustrated or just really interested in learning more, come hang out. I promise you it's worth the time.__Grading:__
 
 I use standard and basic grading scale.
@@ -44,13 +49,10 @@ I use standard and basic grading scale.
 |F|59 or below|
 
 However, your final letter grade will be weighted:
-|Assignment|Weight||----------|------||Reading quizzes|20%|
-|Minor assignments|10%|
-|Excel visualization|10%|
-|Tableau visualization|10%|
-|Mapping visualization|10%|
-|Remote sensing report|10%|
-|Final assignment|30%|You will be graded on effort, creativity and clarity of your work. Work hard, try new things, let your effort show through in the work and you'll do fine. Mail it in and your grade will reflect it.__Final Project:__
+|Assignment|Weight||----------|------||Reading quizzes|10%|
+|Assignments|60%|
+|Final assignment|30%|You will be graded on effort, creativity and clarity of your work. Work hard, try new things, let your effort show through in the work and you'll do fine. Mail it in and your grade will reflect it.
+A note: Not reflected in the grade weights is how I handle things like attendance and class participation. I do not take attendance, but I know if you are there or not. I do not record class participation, but I do know if you take part in class regularly and contribute. So when it comes time to submit grades, and you're right on the line between a B+ and A-, it's your attendance and participation that will sway me to round up or down. Show up, take part, be present and I round up, sometimes pretty generously. Sit on your phone, skip class, never talk and your grade is your grade, I don't care how close you are.__Final Project:__
 The skills and the ideas we're going to discuss in this class are all building toward a final project where you will tell a story with data. The absolute minimum requirements of this final project are: 
 
 * Tell a story with data using visual and narrative techniques discussed in the class.
@@ -64,8 +66,7 @@ You will be graded on:
 * The techniques you use
 * The sophistication of the visualizations
 * The creativity you show
-* The effort you put in, evidenced by scrum participation, GitHub code check-ins, the questions you ask, etc.
-__Notes on attendance__Yes, we all get sick. Yes, things happen. I don’t want you to be sick in my class any more than you want to be sick. You’ve got no fewer than five ways to get ahold of me. If you are going to miss class, tell me before class. We’ll work it out. But you have to tell me before class for me to help you.This said: this class builds each class onto the next one. Miss a class and you are behind. We’re going to be covering a lot of new material in this class. Miss one at your own peril.__Policies__Here's the short version.You cheat, you fail, no exceptions. If I’m doing something that’s keeping you from learning, tell me. Tell the Dean. Tell someone, because that’s not cool. I won’t tolerate it from myself and you shouldn’t either.
+* The effort you put in, evidenced by scrum participation, GitHub code check-ins, the questions you ask, etc.__Notes on attendance__Yes, we all get sick. Yes, things happen. I don’t want you to be sick in my class any more than you want to be sick. You’ve got no fewer than five ways to get ahold of me. If you are going to miss class, tell me before class. We’ll work it out. But you have to tell me before class for me to help you.This said: this class builds each class onto the next one. Miss a class and you are behind. We’re going to be covering a lot of new material in this class. Miss one at your own peril. Assume that you missed something important. And know it is entirely on you to find out what you missed and how to catch up.__Policies__Here's the short version.You cheat, you fail, no exceptions. If I’m doing something that’s keeping you from learning, tell me. Tell the Dean. Tell someone, because that’s not cool. I won’t tolerate it from myself and you shouldn’t either.
 Now the longer versions.__ACEJMC Competencies__
 After this class, you should be able to:
 * Understand concepts and apply theories in the use and presentation of images and information;
