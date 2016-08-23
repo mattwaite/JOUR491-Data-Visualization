@@ -5,8 +5,7 @@ This is __very tentative__ and __will change__.
 
 **In class:** Introductions, syllabus, requirements, needs, skills survey
 
-**Assignment:** Sign up for a GitHub account. Install Git (check the syllabus for links). Fork the course repository. Clone it to your computer. Go buy the books. Now now now now. Watch [David McCandless](http://www.ted.com/talks/david_mccandless_the_beauty_of_data_visualization?language=en) and [Hans Rolling](http://www.ted.com/talks/hans_rosling_shows_the_best_stats_you_ve_ever_seen) talk about data visualization. Be ready for a quiz on them. 
-
+**Assignment:** Sign up for a GitHub account -- [there are free education accounts that give you unlimted private repositories](https://education.github.com/). Install [GitHub Desktop Client](https://desktop.github.com/). Fork the course repository. Clone it to your computer. Go buy the books. Now now now now. Watch [David McCandless](http://www.ted.com/talks/david_mccandless_the_beauty_of_data_visualization?language=en) and [Hans Rolling](http://www.ted.com/talks/hans_rosling_shows_the_best_stats_you_ve_ever_seen) talk about data visualization. Be ready for a quiz on them. 
 
 ###Aug. 25, 2016: What is data visualization?
 
