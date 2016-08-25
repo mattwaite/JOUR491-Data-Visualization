@@ -1,11 +1,11 @@
-#JOUR 407 Data Visualization#
+#JOUR 407/807 Data Visualization#
 __Fall 2016__  
 __T-Th 2:00 - 3:15 p.m.__  
 __ANDN 309__  
 
-Instructor: Matt Waite  
-Email: mwaite3@unl.edu  
-Twitter: @mattwaite  
+Instructors: Matt Waite & Amy Struthers
+Email: mwaite3@unl.edu, astruthers2@unl.edu
+Twitter: @mattwaite, @adprofamy
 Phones: (402) 802-5202 cell, (402) 472-5840 office  
 Office: 244 Andersen  __Course description:__Welcome to data visualization, where you'll learn to use storytelling, analysis and visualization techniques to inform people with data. In this class, you'll learn what makes for good visualizations and how you can develop a deeper understanding of a topic through a combination of words and graphics, forming a new kind of narrative on the web.__Course goals:__* Understand the basics of data and data visualization
 * Understand the history of data visualization techniques
