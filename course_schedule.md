@@ -35,13 +35,13 @@ This is __very tentative__ and __will change__.
 
 **In class:** Quiz on readings. Discussion of your brain on visualizations.
 
-**Assignment:** Read Tufte Chapter 5 and 6. 
+**Assignment:** Read Tufte Chapter 2, 3, 5, 6
 
 ###Sept. 13, 2016: Chart Junk
 
 **In class:**  Discussion of Tufte readings.
 
-**Assignment:** Read Tufte Chapter 2 and 3
+**Assignment:** TBA
 
 ###Sept. 15, 2016: Lying with charts
 
