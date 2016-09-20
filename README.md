@@ -12,12 +12,7 @@ This course is first and foremost an experiment in student learning at a journal
 * Introduce students to data visualization tools and techniques
 * Understand the theories of what makes for good data visualization
 * Get hands on with gathering, cleaning, refining and analyzing data before visualization
-* Get hands on with tools for visualization, from Excel to HTML/CSS to D3.js
+* Get hands on with programmatic tools for analysis and visualization in Python
 * Learn to apply best practices for good data visualization to each of the data visualization tools
 * Get experience using GitHub for version control
 * Get experience with other development environments when working with code.
-
-
-
-
-
