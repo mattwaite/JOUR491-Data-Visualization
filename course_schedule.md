@@ -47,7 +47,7 @@ This is __very tentative__ and __will change__.
 
 **In class:**  Quiz on readings. Discussion of Tufte readings.
 
-**Assignment:** Look for three data visualizations -- in print, online, wherever -- and bring to class on Tuesday. Read the [Junk Chart Trifecta](http://junkcharts.typepad.com/junk_charts/junk-charts-trifecta-checkup-the-definitive-guide.html) and be prepared to discuss charts based on this rubric. Read Shazna Nessa's [Visual Literacy In the Age of Data](https://source.opennews.org/en-US/learning/visual-literacy-age-data/)
+**Assignment:** Look for three data visualizations -- in print, online, wherever -- and bring to class on Thursday. Read the [Junk Chart Trifecta](http://junkcharts.typepad.com/junk_charts/junk-charts-trifecta-checkup-the-definitive-guide.html) and be prepared to discuss charts based on this rubric. Read Shazna Nessa's [Visual Literacy In the Age of Data](https://source.opennews.org/en-US/learning/visual-literacy-age-data/)
 
 ###Sept. 20, 2016: Criticism and data visualizations
 
