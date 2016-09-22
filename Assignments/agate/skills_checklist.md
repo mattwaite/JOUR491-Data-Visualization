@@ -2,8 +2,8 @@
 
 ###Basics
 
-1. Data types
-2. Rows and Columns
+1. Rows and Columns
+2. Data types
 3. Sorting
 4. Measures of Central Tendency -- Mean, Median (no one cares about mode)
 5. Filtering
