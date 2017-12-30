@@ -1,13 +1,13 @@
-# JOUR 407/807 Data Visualization#
+# JOUR 407/807 Data Visualization
 __Spring 2018__  
 __T-Th 2:00 - 3:15 p.m.__  
 __ANDN 309__  
 
-Instructor: Matt Waite
-Email: mwaite3@unl.edu
-Twitter: @mattwaite
+Instructor: Matt Waite  
+Email: mwaite3@unl.edu  
+Twitter: @mattwaite  
 Phones: (402) 802-5202 cell, (402) 472-5840 office  
-Office: 244 Andersen  
+Office: 244 Andersen Hall 
 
 __Course description:__
 
@@ -158,7 +158,7 @@ This is __very tentative__ and __will change__.
 * Read Cairo Chapter 2
 * Read Tufte Chapter 4
 * Quiz in next class covering all readings to this point.
-* 
+*
 
 ### Jan. 18, 2018: Form and function
 

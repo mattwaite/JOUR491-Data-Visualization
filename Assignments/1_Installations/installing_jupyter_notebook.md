@@ -9,10 +9,10 @@
 7. Activate your new environment by typing `source activate dataviz` on a Mac/Linux and `activate dataviz` on a Windows machine.
 8. Now let's install R and a ton of packages. To do that, we'll use Anaconda's R Essentials. Type `conda install r-essentials` and wait for it to finish.
 9. Let's check if Jupyter Notebook is installed correctly by typing `jupyter notebook` and watching to see if a browser pops up with stuff in it. It should use your default browser.
-10. On the top right of the browser, you should see a dropdown menu called New. Click that, and go down to Notebooks and R. Click R.
-11. In the new window, in the first cell, type the following: `words <- "Hello World!"`. Then hit enter and type `print(words)`
-12. Underneath the Cell dropdown menu, you'll see a triangle pointing to the right into a line. Clicking that executes your command (which you want to do). Or, you can hold shift and hit enter to execute the command. When you do that, it should say "Hello World!" below the cell with your code in it.
-13. Marvel at what you have done. You've created an entire virtual environment, installed software into it without harming your computer, opened up a browser based code editor and executed some R. Cool, eh?
-14. Go to File > Close and Halt.
-15. Go to your terminal and hit control C and say yes to shutting down he Jupyter server.
-16. Your last step of the day: Type `source deactivate` on a Mac/Linux or `deactivate` on Windows. This exits out of your environment and returns you to your normal computer. We will do that every time we use this dataviz environment: We'll activate it when we start and deactivate it when we stop.
+10. On the top right of the browser, you should see a dropdown menu called New. Click that, and under Notebooks you should see R.
+
+If you see R there, then go download [this notebook](https://www.dropbox.com/s/1mn03dbf18llah1/Hello%20World%20in%20R.ipynb?dl=0), open it with Jupyter Notebooks and follow along with it.
+
+When you are done, go to File > Close and Halt. Then go to your terminal and hit control C and say yes to shutting down he Jupyter server. Your last step of the day: Type `source deactivate` on a Mac/Linux or `deactivate` on Windows. This exits out of your environment and returns you to your normal computer.
+
+We will do that every time we use this dataviz environment: We'll activate it when we start and deactivate it when we stop.
