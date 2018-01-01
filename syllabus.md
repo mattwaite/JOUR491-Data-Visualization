@@ -7,7 +7,7 @@ Instructor: Matt Waite
 Email: mwaite3@unl.edu  
 Twitter: @mattwaite  
 Phones: (402) 802-5202 cell, (402) 472-5840 office  
-Office: 244 Andersen Hall 
+Office: 244 Andersen Hall
 
 __Course description:__
 
@@ -135,21 +135,94 @@ This is __very tentative__ and __will change__.
 
 **Assignment:**
 
-* Go buy the books. Now now now now. Watch [David McCandless](http://www.ted.com/talks/david_mccandless_the_beauty_of_data_visualization?language=en) and [Hans Rolling](http://www.ted.com/talks/hans_rosling_shows_the_best_stats_you_ve_ever_seen) talk about data visualization. Be ready for a quiz on them.
-* Do assignment 1 -- [installing Jupyter Notebook](https://github.com/mattwaite/JOUR491-Data-Visualization/blob/master/Assignments/1_Installations/installing_jupyter_notebook.md).
-* [Download this notebook](https://www.dropbox.com/s/1mn03dbf18llah1/Hello%20World%20in%20R.ipynb?dl=0), open it in Jupyter Notebook and walk through it.
+* Go buy the books. Now now now now. There will be a quiz on Thursday on the readings.
+* Read Tufte Chapter 1, Graphical Excellence
+* Read Cairo Chapter 1: Why Visualize.
 * Install [Slack](https://slack.com/get) on your computer and your phone.
 
-### Jan. 11, 2018: What is data visualization?
+### Jan. 11, 2018: Graphical Excellence
 
 **In class:** Quiz. What are the specific elements of graphical excellence that make for a good data visualization? These are the foundational principles of the semester.
 
 **Assignment:**
 
-* Read Tufte Chapter 1, Graphical Excellence
-* Read Cairo Chapter 1: Why Visualize.
+* Read [the layered grammar of graphics](http://byrneslab.net/classes/biol607/readings/wickham_layered-grammar.pdf) by Hadley Wickham
+* Do assignment 1 -- [installing Jupyter Notebook](https://github.com/mattwaite/JOUR491-Data-Visualization/blob/master/Assignments/1_Installations/installing_jupyter_notebook.md).
+* [Download this notebook](https://www.dropbox.com/s/1mn03dbf18llah1/Hello%20World%20in%20R.ipynb?dl=0), open it in Jupyter Notebook and walk through it.
 
-### Jan. 16, 2018: Information to wisdom
+### Jan. 16, 2018: R basics
+
+**In class:** Basic data analysis in R
+
+**Assignment:** Do the first R basics assignment  
+
+### Jan. 18, 2018: R basics 2
+
+**In class:** Basic data analysis in R, part 2
+
+**Assignment:** Do the second R basics assignment  
+
+### Jan. 23, 2018: Calculating new values
+
+**In class:** Mutate in R
+
+**Assignment:** Do the calculating percent change assignment
+
+### Jan. 25, 2018: Working with dates
+
+**In class:** Why are dates such a problem?
+
+**Assignment:** Do the working with dates assignment
+
+### Jan. 30, 2018: Recasting data
+
+**In class:** Narrow vs wide data
+
+**Assignment:** Do the reshape2 assignment
+
+### Feb. 1, 2018: Intro to ggplot2
+
+**In class:** The Grammar of Graphics in R
+
+**Assignment:** Do the intro to ggplot2 assignment
+
+### Feb. 6, 2018: More ggplot2
+
+**In class:** The Grammar of Graphics in R
+
+**Assignment:** Do the second ggplot2 assignment
+
+### Feb. 8, 2018: Layers in ggplot2
+
+**In class:** Layering data in ggplot2
+
+**Assignment:** Do the ggplot2 layers assignment
+
+### Feb. 13, 2018: Styling ggplot2 graphics in R
+
+**In class:** The Grammar of Graphics in R
+
+**Assignment:** Do the ggplot2 styling assignment
+
+### Feb. 15, 2018: Styling ggplot2 graphics in Illustrator
+
+**In class:** Graphical finishing school
+
+**Assignment:** Do the styling in Illustrator assignment
+
+### Feb. 20, 2018: Visual storytelling I
+
+**In class:** Guest speaker: Theo Francis, Wall Street Journal.
+
+**Assignment:** Reaction paper on Francis talk, prepare a story pitch for your first visual story.  
+
+### Feb. 22, 2018: Visual storytelling II
+
+**In class:** Story pitches, guest speaker TBA
+
+**Assignment:** Reaction paper, start working on your visual story
+
+### Feb. 27, 2018: Information to wisdom
 
 **In class:** Discussion of Cairo. Tufte.
 
@@ -157,174 +230,71 @@ This is __very tentative__ and __will change__.
 
 * Read Cairo Chapter 2
 * Read Tufte Chapter 4
-* Quiz in next class covering all readings to this point.
-*
+* Quiz in next class covering readings.
 
-### Jan. 18, 2018: Form and function
-
-**In class:** Quiz on readings. Discussion of Cairo and Tufte readings. Making your first chart with LEGO. Yes. I said that.
-
-**Assignment:**
-
-* Read Cairo chapters 3 and 4
-
-### Jan. 23, 2018: Art and complexity
+### March 1, 2018: Art and complexity
 
 **In class:**  Discussion of Cairo readings
 
 **Assignment:** Read Cairo Chapter 6.
 
-### Jan. 25, 2018: Data visualization and cognition
+### March 6, 2018: Data visualization and cognition
 
 **In class:** Quiz on readings. Discussion of your brain on visualizations.
 
-**Assignment:** Read Tufte Chapter 2, 3, 5, 6
+**Assignment:**
 
-### Sept. 13 Chart Junk
+### March 8, 2018: Tarbell and online publication
+
+**In class:** How we're going to publish visual stories
+
+**Assignment:** Do the tarbell assignment
+
+### March 13, 2018: Github and transparency
+
+**In class:** Showing your work
+
+**Assignment:** Do the github assignment
+
+### March 15, 2018: Story edits and production
+
+Sign up for your meeting time. Prepare a pitch for your second visual story.
+
+### March 20, 2018:
+
+**No class: Spring Break**
+
+### March 22, 2018:
+
+**No class: Spring Break**
+
+### March 27, 2018: Critique
+
+**In class:** In class critique of published work. Story pitches
+
+**Assignment:**
+
+Read Tufte Chapter 2, 3, 5, 6
+
+### March 29, 2018: Chart Junk
 
 **In class:**  Discussion of Tufte readings.
 
 **Assignment:** TBA
 
-### Sept. 15 Lying with charts
+### April 3, 2018: Lying with charts
 
 **In class:**  Quiz on readings. Discussion of Tufte readings.
 
 **Assignment:** Look for three data visualizations -- in print, online, wherever -- and bring to class on Thursday. Read the [Junk Chart Trifecta](http://junkcharts.typepad.com/junk_charts/junk-charts-trifecta-checkup-the-definitive-guide.html) and be prepared to discuss charts based on this rubric. Read Shazna Nessa's [Visual Literacy In the Age of Data](https://source.opennews.org/en-US/learning/visual-literacy-age-data/)
 
-### Sept. 20 Criticism and data visualizations
-
-**In class:**  Learn how to dissect others work, improve your own.
-
-**Assignment:** Read Cairo Chapter 8 and 9.
-
-### Sept. 22 Basic data literacy 1
-
-**In class:**  Last reading quiz. Then: Math. Yes. Math.
-
-**Assignment:** Math assignment TBA.
-
-### Sept. 27 Basic data literacy
-
-**In class:**  What is data, what kinds of data are there, where can you find it?
-
-**Assignment:** Data assignment TBA.
-
-### Sept. 29 Basic data literacy 3
-
-**In class:**  Basic analysis -- sorting, counting, summing, averaging, change.
-
-**Assignment:** Analysis assignment TBA.
-
-### Oct. 4 Basic data literacy 4
-
-**In class:**  Cleaning data, aka your university hates you and I have proof.  
-
-**Assignment:** Data cleaning assignment TBA.
-
-### Oct. 6 Beginning data visualization 1
-
-**In class:**  Using Excel to generate basic charts
-
-**Assignment:** Create a chart with Excel. Data TBA. Due Tuesday.
-
-### Oct. 11 Beginning data visualization 2
-
-**In class:**  How to make better charts with Excel
-
-**Assignment:** Using what we learned in class and the lessons from your readings, make the chart you turned in better. Much better. Publication worthy better. Download and use the [Data Viz Checklist](http://stephanieevergreen.com/dataviz-checklist/)
-
-### Oct. 13 Beginning data visualizations 3
-
-**In class:**  Making charts with Chartbuilder
-
-**Assignment:** Create your own chart with Chartbuilder. Data TBA. Due Tuesday.
-
-### Oct. 18 Fall Break
-
-### Oct. 20 Programmatic visualization 1
-
-**In class:** Introduction to Python/Jupyter/Plot.ly
-
-**Assignment:** Experiment with the tools, start preparing a pitch for your first visual story.
-
-### Oct. 25 Programmatic visualization 2
-
-**In class:**  More hands on with Python/Plot.ly
-
-**Assignment:** Assignment TBA.
-
-### Oct. 27 Programmatic visualization 3
-
-**In class:** More hands on with Python/Plot.ly
-
-**Assignment:** Assignment TBA.
-
-### Nov. 1 Publishing with Tarbell
-
-**In class:**  Publishing your work online using Tarbell, Python and Github.
-
-**Assignment:** Install Tarbell, begin editing page, adding content. Come with questions, concerns, opportunities, etc.
-
-### Nov. 3 Publishing with Tarbell
-
-**In class:**  Publishing your work online using Tarbell, Python and Github.
-
-**Assignment:** Finalize your visual story. You present on Tuesday.
-
-### Nov. 8 Present visual stories
-
-**In class:**  Present visual story
-
-**Assignment:** Prepare pitch for final story.
-
-### Nov. 10 Advanced programmatic Visualization 1
-
-**In class:**  TBA
-
-**Assignment:** Assignment TBA.
-
-### Nov. 15 Advanced programmatic Visualization 2
-
-**In class:**  TBA
-
-**Assignment:** Assignment TBA.
-
-### Nov. 17 Advanced programmatic Visualization 3
-
-**In class:**  TBA
-
-**Assignment:** Assignment TBA.
-
-### Nov 22 Advanced programmatic Visualization 3
-
-**In class:**  In class work. Also: Your final assignment. You will have to report, analyze, visualize and publish a visual story of your own making. We'll discuss. You'll pitch your ideas.
-
-**Assignment:** Develop a final story project idea. We pitch after the break.
-
-### Nov 24 Thanksgiving Break
-
-
-### Nov. 29 Final project pitches, work time
-
-**In class:**  Pitch your idea in class. Then we'll work on final projects in class.
-
-**Assignment:** Work on final project
-
-
-### Dec. 1 Pitches, project work time
-
-**In class:**  In class time to work on final projects.
-
-**Assignment:** Work on final project.
-
-
-### Dec. 6 Project work time
-
-**In class:**  In class time to work on final projects.
-
-**Assignment:** Work on final project.
-
-### Dec. 8 Final project presentations
-
-**In class:**  Final presentations. Class ends.
+### April 5, 2018: Intro, syllabus
+### April 10, 2018: Intro, syllabus
+### April 12, 2018: Intro, syllabus
+### April 17, 2018: Intro, syllabus
+### April 19, 2018: Intro, syllabus
+### April 24, 2018: Intro, syllabus
+
+### April 26, 2018: Story edits and production
+
+Sign up for your meeting time.
