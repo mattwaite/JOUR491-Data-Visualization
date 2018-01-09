@@ -1,7 +1,7 @@
 # JOUR 407/807 Data Visualization
 __Spring 2018__  
-__T-Th 2:00 - 3:15 p.m.__  
-__ANDN 309__  
+__T-Th 3:30 - 4:45 p.m.__  
+__ANDN 27__  
 
 Instructor: Matt Waite  
 Email: mwaite3@unl.edu  
@@ -288,12 +288,19 @@ Read Tufte Chapter 2, 3, 5, 6
 
 **Assignment:** Look for three data visualizations -- in print, online, wherever -- and bring to class on Thursday. Read the [Junk Chart Trifecta](http://junkcharts.typepad.com/junk_charts/junk-charts-trifecta-checkup-the-definitive-guide.html) and be prepared to discuss charts based on this rubric. Read Shazna Nessa's [Visual Literacy In the Age of Data](https://source.opennews.org/en-US/learning/visual-literacy-age-data/)
 
-### April 5, 2018: Intro, syllabus
-### April 10, 2018: Intro, syllabus
-### April 12, 2018: Intro, syllabus
-### April 17, 2018: Intro, syllabus
-### April 19, 2018: Intro, syllabus
-### April 24, 2018: Intro, syllabus
+### April 5, 2018: Working with maps 1
+
+### April 10, 2018: Working with maps 2
+
+### April 12, 2018: Working with maps 3
+
+### April 17, 2018: Working with maps 4
+
+### April 19, 2018: Other visualizations
+
+### April 24, 2018: Work time
+
+In class work time and question answering.
 
 ### April 26, 2018: Story edits and production
 
