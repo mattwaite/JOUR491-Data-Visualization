@@ -5,7 +5,7 @@
 3. If a big stream of text goes by, you've got Anaconda installed.
 4. If you get an error or nothing happens, come find me. **STOP HERE IF YOU GET AN ERROR MESSAGE**.
 5. Let's update Anaconda by typing in your terminal `conda update conda` and then type `y` when it asks if you want to update the packages.
-6. Now let's create an environment for us to work in. Type `conda create --name dataviz python=3 jupyter` into your terminal and say yes to the installation. What this does is it creates a whole new python environment that won't interfere with any python environments you have set up before (Mac users: Apple installs Python 2.7 in your system and messing with it can have disastrous consequences for your machine. Thus, environments).
+6. Now let's create an environment for us to work in. Type `conda create --name dataviz python=2 jupyter` into your terminal and say yes to the installation. What this does is it creates a whole new python environment that won't interfere with any python environments you have set up before (Mac users: Apple installs Python 2.7 in your system and messing with it can have disastrous consequences for your machine. Thus, environments).
 7. Activate your new environment by typing `source activate dataviz` on a Mac/Linux and `activate dataviz` on a Windows machine.
 8. Now let's install R and a ton of packages. To do that, we'll use Anaconda's R Essentials. Type `conda install r-essentials` and wait for it to finish.
 9. Let's check if Jupyter Notebook is installed correctly by typing `jupyter notebook` and watching to see if a browser pops up with stuff in it. It should use your default browser.
