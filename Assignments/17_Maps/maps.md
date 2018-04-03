@@ -2,6 +2,8 @@
 
 First and foremost, I want to be clear on this: Mapping is hard. There is a lot going on, and a lot of external libraries necessary to make it work. So this won't be as easy as working with standard datasets and libraries.
 
+We're going to borrow heavily from John Burn-Murdoch's [good work](https://twitter.com/jburnmurdoch/status/981074810020204544) that he graciously included the code [here](https://gist.githubusercontent.com/johnburnmurdoch/2dd39f56631ffffe4a99633c76781a1e/raw/d620455ad45b07e15c141318c0a9a437ffeb5096/main.R).
+
 To do this, we're going to have to get out of Jupyter Notebooks and Anaconda, which has terrible support for various mapping libraries. We're going to use the industry standard tool for using R, which is called R Studio. To install R Studio, we have to first install R by downloading your computer's version [here](https://cran.rstudio.com/).
 
 Then install RStudio by going [here](https://www.rstudio.com/products/rstudio/download/#download).
@@ -17,6 +19,7 @@ install.packages('devtools')
 install.packages('sf')
 devtools::install_github("hrbrmstr/albersusa")
 install.packages('tidyverse')
+install.packages('utils')
 ```
 
 Now let's load some libraries up:
@@ -77,4 +80,4 @@ ggplot(nation) +
      scale_fill_distiller(type="div", direction=-1)
 ```
 
-What's the problem here? 
+What's the problem here?
