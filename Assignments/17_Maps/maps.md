@@ -18,8 +18,8 @@ Now we have to set up our environment by installing all the packages we're used 
 install.packages('devtools')
 install.packages('sf')
 devtools::install_github("hrbrmstr/albersusa")
-install.packages('tidyverse')
-install.packages('utils')
+devtools::install_github("tidyverse/ggplot2")
+install.packages('dplyr')
 ```
 
 Now let's load some libraries up:
